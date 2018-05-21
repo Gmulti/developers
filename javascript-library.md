@@ -1,8 +1,8 @@
 ---
-description: A guide for Weglot's client Javascript library
+description: A guide for Weglot's client Javascript integration
 ---
 
-# Javascript library
+# Javascript
 
 ## Getting started
 
