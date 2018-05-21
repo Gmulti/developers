@@ -8,5 +8,5 @@
     * [weglot\_words\_translate](wordpress/filters/weglot_words_translate.md)
 * Drupal
 * [Laravel](laravel.md)
-* [Symfony](untitled.md)
+* [Symfony](symfony.md)
 

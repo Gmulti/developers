@@ -32,7 +32,7 @@ Integrate Weglot plugin in your Drupal website to start translating and make it 
 {% endtab %}
 
 {% tab title="Symfony" %}
-[See more](untitled.md)
+[See more](symfony.md)
 {% endtab %}
 {% endtabs %}
 
