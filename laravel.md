@@ -1,12 +1,10 @@
+---
+description: Seamless integration of Weglot into your Laravel project.
+---
+
 # Laravel
 
-## Laravel Package
-
 [![WeglotSlack](https://camo.githubusercontent.com/457f046a2d43d9c73260618a0cb55c6dd85f9a6c/68747470733a2f2f7765676c6f742d636f6d6d756e6974792e6e6f772e73682f62616467652e737667)](https://weglot-community.now.sh/) [![Latest Stable Version](https://camo.githubusercontent.com/98d5306946b3dd71eebf627860fde409bcbd541b/68747470733a2f2f706f7365722e707567782e6f72672f7765676c6f742f7472616e736c6174652d6c61726176656c2f762f737461626c65)](https://packagist.org/packages/weglot/translate-laravel) [![Maintainability](https://camo.githubusercontent.com/0a934cfa0737e06449410247ccb358efe00dd4ee/68747470733a2f2f6170692e636f6465636c696d6174652e636f6d2f76312f6261646765732f35373434333261326663623637323331613130392f6d61696e7461696e6162696c697479)](https://codeclimate.com/github/weglot/translate-laravel/maintainability) [![License](https://camo.githubusercontent.com/0e4d4702ba04f313eb00acd66b8e59f0c55d48c7/68747470733a2f2f706f7365722e707567782e6f72672f7765676c6f742f7472616e736c6174652d6c61726176656c2f6c6963656e7365)](https://packagist.org/packages/weglot/translate-laravel)
-
-### Overview
-
-Seamless integration of Weglot into your Laravel project.
 
 ### Requirements
 
