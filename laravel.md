@@ -15,13 +15,13 @@ description: Seamless integration of Weglot into your Laravel project.
 
 You can install the library via [Composer](https://getcomposer.org/). Run the following command:
 
-```text
+```bash
 composer require weglot/translate-laravel
 ```
 
 To use the library, use Composer's [autoload](https://getcomposer.org/doc/01-basic-usage.md#autoloading):
 
-```text
+```php
 require_once __DIR__. '/vendor/autoload.php';
 ```
 
@@ -33,7 +33,7 @@ require_once __DIR__. '/vendor/autoload.php';
 
 Add Weglot package in the `config/app.php`:
 
-```text
+```php
 return [
     // ...
 
@@ -50,13 +50,13 @@ return [
 
 As usual for Laravel packages, you can publish configuration files by doing:
 
-```text
+```bash
 $ php artisan vendor:publish --provider="Weglot\Translate\TranslateServiceProvider" --tag="config"
 ```
 
 You'll find the configuration file in `config/weglot-translate.php`:
 
-```text
+```php
 <?php
 
 return [
@@ -100,7 +100,7 @@ You can add them through the helper function: `weglotHrefLangRender`
 
 Just put the function at the end of your `<head>` tag:
 
-```text
+```markup
 <html>
     <head>
         ...
@@ -115,7 +115,7 @@ You can add a language button with the helper function: `weglotButtonRender`
 
 Two layouts exists:
 
-```text
+```markup
 <!-- first layout -->
 {{ weglotButtonRender(1) }}
 
