@@ -1,7 +1,6 @@
 # Table of contents
 
 * Introduction
-* Basis
 * [Javascript](javascript-library.md)
 * WordPress
   * [Get started](wordpress/installation.md)
