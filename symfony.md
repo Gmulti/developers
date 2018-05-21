@@ -15,13 +15,13 @@ description: Seamless integration of Weglot into your Symfony project.
 
 You can install the library via [Composer](https://getcomposer.org/). Run the following command:
 
-```text
+```bash
 composer require weglot/translate-bundle
 ```
 
 To use the library, use Composer's [autoload](https://getcomposer.org/doc/01-basic-usage.md#autoloading):
 
-```text
+```php
 require_once __DIR__. '/vendor/autoload.php';
 ```
 
@@ -33,7 +33,7 @@ require_once __DIR__. '/vendor/autoload.php';
 
 Add Weglot bundle in the `config/bundles.php`:
 
-```text
+```php
 return [
     Symfony\Bundle\FrameworkBundle\FrameworkBundle::class => ['all' => true],
     // ... Other bundles ...
@@ -45,7 +45,7 @@ return [
 
 Add Weglot bundle to `app/AppKernel.php` file:
 
-```text
+```php
 $bundles = array(
     new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
     // ... Other bundles ...
@@ -57,7 +57,7 @@ $bundles = array(
 
 For Symfony 4, create configuration file under `config/packages/weglot_translate.yml` and add following content. For Symfony 3 & 2, add following content to your `app/config/config.yml`.
 
-```text
+```yaml
 weglot_translate:
     api_key: 'YOUR_WEGLOT_API_KEY'
     original_language : 'en'
@@ -76,7 +76,7 @@ This is an example of configuration, enter your own API key, your original langu
 
 There is also a non-required parameters `exclude_blocks` where you can list all blocks you don't want to be translated. For example, if I've a block with class "site-name", you've to do as following:
 
-```text
+```yaml
     exclude_blocks:
         - .site-name
 ```
@@ -89,7 +89,7 @@ If you wanna use cache, just add `cache: true` to this bundle configuration. It 
 
 To clear the cache, you just have to use our custom command:
 
-```text
+```bash
 $ php bin/console weglot:cache:clear
 ```
 
@@ -101,7 +101,7 @@ You can add them through the Twig function: `weglot_hreflang_render`
 
 Just put the function at the end of your `<head>` tag:
 
-```text
+```markup
 <html>
     <head>
         ...
@@ -116,7 +116,7 @@ You can add a language button if you're using Twig with function: `weglot_transl
 
 Two layouts exists:
 
-```text
+```markup
 <!-- first layout -->
 {{ weglot_translate_render(1) }}
 
