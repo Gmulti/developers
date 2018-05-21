@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Javascript](javascript-library.md)
+* [Javascript](javascript.md)
 * WordPress
   * [Get started](wordpress/installation.md)
   * [Filters](wordpress/filters/README.md)
