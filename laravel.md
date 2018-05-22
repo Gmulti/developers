@@ -51,7 +51,7 @@ return [
 As usual for Laravel packages, you can publish configuration files by doing:
 
 ```bash
-$ php artisan vendor:publish --provider="Weglot\Translate\TranslateServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Weglot\Translate\TranslateServiceProvider" --tag="config"
 ```
 
 You'll find the configuration file in `config/weglot-translate.php`:
