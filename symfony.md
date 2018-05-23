@@ -4,6 +4,8 @@ description: Seamless integration of Weglot into your Symfony project.
 
 # Symfony
 
+Github repository: [https://github.com/weglot/translate-bundle](https://github.com/weglot/translate-bundle)
+
 [![WeglotSlack](https://camo.githubusercontent.com/457f046a2d43d9c73260618a0cb55c6dd85f9a6c/68747470733a2f2f7765676c6f742d636f6d6d756e6974792e6e6f772e73682f62616467652e737667)](https://weglot-community.now.sh/) [![Latest Stable Version](https://camo.githubusercontent.com/767618fa6cfb228d7053b2dbeb7be4513a846e23/68747470733a2f2f706f7365722e707567782e6f72672f7765676c6f742f7472616e736c6174652d62756e646c652f762f737461626c65)](https://packagist.org/packages/weglot/translate-bundle) [![Maintainability](https://camo.githubusercontent.com/1a65f54fd56ea33a3426ab08b43d2c234c0c9872/68747470733a2f2f6170692e636f6465636c696d6174652e636f6d2f76312f6261646765732f62313738356431653932323538363966336461302f6d61696e7461696e6162696c697479)](https://codeclimate.com/github/weglot/translate-bundle/maintainability) [![License](https://camo.githubusercontent.com/caf896c9ab5fb404800617b2e99017d19ff413ec/68747470733a2f2f706f7365722e707567782e6f72672f7765676c6f742f7472616e736c6174652d62756e646c652f6c6963656e7365)](https://packagist.org/packages/weglot/translate-bundle)
 
 ### Requirements
