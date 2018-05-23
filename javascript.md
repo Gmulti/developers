@@ -92,3 +92,45 @@ Weglot.setup({
 });
 ```
 
+## JS Library versions
+
+Weglot's JS library comes in different versions. They are all stored in our CDN in a minified file.
+
+Depending on the version you would like to use, you may want to change first line of code in the "Getting started" section. For example, to use the standard version of Weglot JS \(which is available at https://cdn.weglot.com/weglot.min.js\), the first line will be:
+
+```markup
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+```
+
+### **Standard**
+
+Available at _https://cdn.weglot.com/weglot.min.js_
+
+Use this version when you're not installing Weglot on one of our supported platforms \(Shopify, Wix, Bigcommerce, etc.\)
+
+### Shopify
+
+Available at _https://cdn.weglot.com/weglot\_shopify.min.js_ 
+
+This is the version used by Weglot's [Shopify app](https://apps.shopify.com/weglot). It's included automatically for you, hence we advise you to use our app directly for any Shopify store as some features come only from the app \(Checkout translation, drag-and-drop placement, etc.\)
+
+This version adds a few Shopify-specific options and features, sets the user language for each order and integrates to the right
+
+### **Bigcommerce**
+
+Available at _https://cdn.weglot.com/weglot\_bigcommerce.min.js_
+
+This is the version used by the [Bigcommerce app](https://www.bigcommerce.com/apps/weglot-translate/). It adds some convenience options that help setting the right customer language along the way, as well as support for cart drawers.
+
+### **Wix**
+
+Available at _https://cdn.weglot.com/weglot\_wix.min.js_
+
+This is the version any Wix user should use, as it loads the Weglot app once the Wix website has been initialised properly.
+
+### **Jimdo**
+
+Available at _https://cdn.weglot.com/weglot\_jimdo.min.js_
+
+This is the version any Jimdo user should use.
+
