@@ -11,7 +11,7 @@ Github repository: [https://github.com/weglot/translate-laravel](https://github.
 ### Requirements
 
 * PHP version 5.5 and later
-* Weglot API Key, starting at [free level](https://dashboard.weglot.com/register)
+* Weglot API Key, starting at [free level](https://dashboard.weglot.com/register?origin=7)
 
 ### Installation
 
@@ -81,7 +81,7 @@ return [
 
 This is an example of configuration, enter your own API key, your original language and destination languages that you want.
 
-* `api_key` : is your personal API key. You can get an API Key by signing up on [Weglot](https://weglot.com/).
+* `api_key` : is your personal API key. You can get an API Key by signing up on [Weglot](https://dashboard.weglot.com/register?origin=7).
 * `original_language` : original language is the language of your website before translation.
 * `destination_languages` : are the languages that you want your website to be translated into.
 * `cache` : if you wanna use cache or not. It's not a required field and set as false by default. Look at [Caching part](https://github.com/weglot/translate-laravel#caching) for more details.
