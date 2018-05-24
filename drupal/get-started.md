@@ -2,7 +2,7 @@
 description: This shows you how to get started with Weglot Translate module on Drupal
 ---
 
-# Get started
+# Get started - Drupal 7
 
 ## Requirements modules
 
