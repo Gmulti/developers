@@ -20,7 +20,7 @@ Integrate Weglot plugin in your WordPress website to start translating and make 
 {% tab title="Drupal" %}
 Integrate Weglot plugin in your Drupal website to start translating and make it multilingual.
 
-[See more](drupal.md)
+[See more](drupal/)
 {% endtab %}
 {% endtabs %}
 
