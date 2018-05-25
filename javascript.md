@@ -134,3 +134,19 @@ Available at _https://cdn.weglot.com/weglot\_jimdo.min.js_
 
 This is the version any Jimdo user should use.
 
+## Library API
+
+### Weglot.getCurrentLang\(\)
+
+{% tabs %}
+{% tab title="Parameters" %}
+None
+{% endtab %}
+
+{% tab title="Response" %}
+String: the ISO 639-1 2-letter code of the current language on the page
+{% endtab %}
+{% endtabs %}
+
+
+
