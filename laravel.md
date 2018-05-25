@@ -96,6 +96,12 @@ We implemented usage of `Cache` Facade for our package.
 
 If you wanna use cache, just put the `cache` parameter to true in this package configuration. It will plug onto the Laravel cache behavior.
 
+If you want to clear your translation cache, just use the `weglot:cache:clear` command as following:
+
+```bash
+$ php artisan weglot:cache:clear
+```
+
 #### Optional - Hreflang links
 
 Hreflang links are a way to describe your website and to tell webcrawlers \(such as search engines\) if this page is available in other languages. More details on Google post about hreflang: [support.google.com/webmasters/answer/189077](https://support.google.com/webmasters/answer/189077)
