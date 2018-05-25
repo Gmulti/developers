@@ -225,3 +225,7 @@ callbackFunction\(Function\): **optional field**, if you'd like to target a spec
 {% endtab %}
 {% endtabs %}
 
+### setup\(options\)
+
+Called to initialize Weglot. See [Initialization code](javascript.md#initialization-code)
+
