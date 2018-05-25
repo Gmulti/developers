@@ -164,5 +164,21 @@ For example, calling `Weglot.getLanguageName("es")` returns `"Español"`
 {% endtab %}
 {% endtabs %}
 
+### switchTo\(code\)
+
+{% tabs %}
+{% tab title="Parameters" %}
+* code\(String\): the ISO 639-1 2-letter code of a language you're supporting on your website
+
+  code is either **originalLanguage** or one of the **destinationLanguages**
+{% endtab %}
+
+{% tab title="Response" %}
+String: the local name of the language, as defined by ISO 639-1
+
+For example, calling `Weglot.getLanguageName("es")` returns `"Español"`
+{% endtab %}
+{% endtabs %}
+
 
 
