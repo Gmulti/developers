@@ -136,11 +136,25 @@ This is the version any Jimdo user should use.
 
 ## Library API
 
-### Weglot.getCurrentLang\(\)
+All the following entries are attributes of the **Weglot** window variable. Hence, **getCurrentLang\(\)** can be called from the window context by calling **Weglot.getCurrentLang\(\)**
+
+### getCurrentLang\(\)
 
 {% tabs %}
 {% tab title="Parameters" %}
 None
+{% endtab %}
+
+{% tab title="Response" %}
+String: the ISO 639-1 2-letter code of the current language on the page
+{% endtab %}
+{% endtabs %}
+
+### getLanguageName\(code\)
+
+{% tabs %}
+{% tab title="Parameters" %}
+code\(String\): the ISO 639-1 2-letter code of [a language supported by Weglot](https://weglot.com/documentation/available-languages)
 {% endtab %}
 
 {% tab title="Response" %}
