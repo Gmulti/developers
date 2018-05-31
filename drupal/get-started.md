@@ -8,6 +8,7 @@ description: This shows you how to get started with Weglot Translate module on D
 
 * Path
 * Locale
+* Composer Manager
 
 ## Step 1 - Download and install
 
