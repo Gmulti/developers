@@ -16,7 +16,6 @@
 
 ## Developer kits
 
-* [API Reference](developer-.-kits/api-reference.md)
 * PHP
 
 ## API
