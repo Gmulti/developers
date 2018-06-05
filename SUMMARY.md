@@ -6,8 +6,7 @@
 
 * Drupal
   * [Get started - Drupal 7](drupal/get-started.md)
-* [Javascript](javascript/README.md)
-  * API
+* [Javascript](javascript.md)
 * [Laravel](laravel.md)
 * [WordPress](wordpress/README.md)
   * [Get started](wordpress/installation.md)
@@ -19,4 +18,8 @@
 
 * [API Reference](developer-.-kits/api-reference.md)
 * PHP
+
+## API
+
+* API Reference
 
