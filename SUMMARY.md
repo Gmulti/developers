@@ -20,5 +20,5 @@
 
 ## API
 
-* API Reference
+* Reference
 
