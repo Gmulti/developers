@@ -22,5 +22,5 @@
 
 ## API
 
-* Reference
+* [Reference](api/reference.md)
 
