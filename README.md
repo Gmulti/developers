@@ -38,5 +38,5 @@ Integrate Weglot plugin in your Drupal website to start translating and make it 
 
 ## Libraries
 
-You can check libraries documentation on following link: [https://weglot.github.io/weglot-documentation/](https://weglot.github.io/weglot-documentation/)
+You can check libraries documentation on following link: [https://weglot.github.io/documentation/](https://weglot.github.io/documentation/)
 
