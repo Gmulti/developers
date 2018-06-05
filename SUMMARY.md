@@ -4,6 +4,7 @@
 
 ## Integration guides
 
+* [Wix](integration-guides/wix.md)
 * Drupal
   * [Get started - Drupal 7](drupal/get-started.md)
 * [Javascript](javascript.md)
