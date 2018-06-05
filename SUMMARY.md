@@ -4,7 +4,7 @@
 
 ## Integration guides
 
-* Drupal
+* [Drupal](drupal/README.md)
   * [Get started - Drupal 7](drupal/get-started.md)
 * [Javascript](javascript.md)
 * [Laravel](laravel.md)
@@ -18,7 +18,7 @@
 
 ## Developer kits
 
-* PHP
+* [PHP](developer-.-kits/php.md)
 
 ## API
 

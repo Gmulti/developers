@@ -28,5 +28,60 @@ Save the settings and you are done. You will see the language button appear on y
 
 ## Plugin settings
 
+#### Override CSS
+
+You can add your own CSS rules to customize the language button.
+
+Weglot automatically adds a button in your page, that is either a dropdown or a list.
+
+{% tabs %}
+{% tab title="Dropdown" %}
+```markup
+<aside data-wg-notranslate class="wg-default wg-drop country-selector closed weglot-selector" onclick="openClose(this);" >
+   <div data-wg-notranslate class="wgcurrent wg-li wg-flags flag-3 en"><a href="#" onclick="return false;" >English</a></div>
+   <ul>
+      <li class="wg-li wg-flags flag-3 zh"><a data-wg-notranslate href="http://yourwebsite.com/zh/">中文 (简体)</a></li>
+      <li class="wg-li wg-flags flag-3 fr"><a data-wg-notranslate href="http://yourwebsite.com/fr/">Français</a></li>
+      <li class="wg-li wg-flags flag-3 es"><a data-wg-notranslate href="http://yourwebsite.com/es/">Español</a></li>
+      <li class="wg-li wg-flags flag-3 el"><a data-wg-notranslate href="http://yourwebsite.com/el/">Ελληνικά</a></li>
+   </ul>
+</aside>
+```
+{% endtab %}
+
+{% tab title="List" %}
+```markup
+<aside data-wg-notranslate class="wg-default wg-list country-selector closed weglot-selector" onclick="openClose(this);" >
+   <li data-wg-notranslate class="wgcurrent wg-li wg-flags flag-3 en"><a href="#" onclick="return false;" >English</a></li>
+   <li class="wg-li wg-flags flag-3 ar"><a data-wg-notranslate href="http://wptest.weglot.com/ar/">‏العربية‏</a></li>
+   <li class="wg-li wg-flags flag-3 zh"><a data-wg-notranslate href="http://wptest.weglot.com/zh/">中文 (简体)</a></li>
+   <li class="wg-li wg-flags flag-3 fr"><a data-wg-notranslate href="http://wptest.weglot.com/fr/">Français</a></li>
+   <li class="wg-li wg-flags flag-3 es"><a data-wg-notranslate href="http://wptest.weglot.com/es/">Español</a></li>
+   <li class="wg-li wg-flags flag-3 el"><a data-wg-notranslate href="http://wptest.weglot.com/el/">Ελληνικά</a></li>
+</aside>
+```
+{% endtab %}
+{% endtabs %}
+
+You can use these classes to ad your own rules. For example adding this in "Override CSS" : 
+
+```css
+.country-selector a {
+    text-transform: uppercase;
+}
+```
+
+will make the language name uppercase
+
+#### Exclude URL
+
+By default, all pages are translated. You can use this field to enter URL that you don't want to translate. This field matches regex.
+
+For example, if you want to exclude all URL that contains `/blog/` , you can simply add "/blog/"  in the option.
+
+Another example, if you want to only translate your homepage, meaning you want to exclude every URL except `/` , you would enter the following : `[^/]`
+
+#### Exclude blocks
+
 
 
