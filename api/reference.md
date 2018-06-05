@@ -98,7 +98,7 @@ Used to defined how a sentence gonna be used.
 
 | **Short-Name** | **Value** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| OTHER | 0 | The word is one of the elements below. |
+| OTHER | 0 | The word is none of the elements below \(deprecated\) |
 | TEXT | 1 | Word is simple text \(default\) |
 | VALUE | 2 | Word is an attribute value |
 | PLACEHOLDER | 3 | Word is from a placeholder |
