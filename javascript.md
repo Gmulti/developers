@@ -58,6 +58,7 @@ Where `options` is a Javascript object with properties defined as follows. Only 
 * `excludePaths`: A comma-separated list of paths to exclude from translations. It's a regex string that the current path will be tested against.
 * `waitTransition`: `1` or `true` to prevent content blinking when translating a new page. Defaults to `false`.
 * `translateSearch`: `1` or `true` to translate search queries on the website, `O` or `false` otherwise. Defaults to `false`.
+* `hideSwitcher` : `true` to prevent Weglot from creating language switchers, `false` otherwise. Defaults to `false`.  If you set it to `true`, it's your responsibility to use the Cleint-side API or link hooks to change languages on the page
 * `switchers`: A javascript Array of Objects with the following properties:
   * `styleOpt`: defined exactly as the main styleOpt
   * `target`: the CSS selector of the node that the switcher will be a child of
