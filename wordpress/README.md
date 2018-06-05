@@ -10,9 +10,11 @@ Weglot has built a powerful WordPress plugin that integrates in your WordPress w
 
 What does Weglot plugin do exactly ?
 
-1. It creates URL for each languages. 
+1. It creates URL for each languages, like `/fr/about/` or `/es/about/` for instance
+2. On these URL, it returns the translated content
+3. It adds a language button on the page and the `hreflang` tags in the `<head>` section of your page for SEO.
 
-## Getting Started
+## Getting started
 
 To start, install [Weglot Translate](https://wordpress.org/plugins/weglot/) plugin directly from the directory.
 
@@ -23,6 +25,8 @@ In the settings page, configure the 3 mandatory settings :
 * **Destination Languages** : The languages you want your website to be translated into.
 
 Save the settings and you are done. You will see the language button appear on your website.
+
+## Plugin settings
 
 
 
