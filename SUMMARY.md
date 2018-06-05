@@ -1,7 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Javascript](javascript.md)
+* [Javascript](javascript/README.md)
+  * [API](javascript/api.md)
 * WordPress
   * [Get started](wordpress/installation.md)
   * [Filters](wordpress/filters/README.md)

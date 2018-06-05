@@ -227,5 +227,5 @@ callbackFunction\(Function\): **optional field**, if you'd like to target a spec
 
 ### setup\(options\)
 
-Called to initialize Weglot. See [Initialization code](javascript.md#initialization-code)
+Called to initialize Weglot. See [Initialization code](./#initialization-code)
 
