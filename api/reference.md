@@ -10,7 +10,71 @@ aaa
 
 ## Endpoints {#endpoints}
 
-aaa
+{% api-method method="post" host="https://api.weglot.com" path="/translate" %}
+{% api-method-summary %}
+Translate
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="https://api.weglot.com" path="/status" %}
+{% api-method-summary %}
+Status
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 ## Resources {#resources}
 
@@ -18,7 +82,7 @@ aaa
 
 Used to defined the source of a request.
 
-| Short-Name | Value | Description |
+| **Short-Name** | **Value** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | HUMAN | 0 | Sent from human action |
 | OTHER | 1 | Sent from unknow source |
@@ -32,7 +96,15 @@ Used to defined the source of a request.
 
 Used to defined how a sentence gonna be used.
 
-| Short-Name | Value | Description |
-| --- | --- |
-|  |  |  |
+| **Short-Name** | **Value** | **Description** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| OTHER | 0 | The word is one of the elements below. |
+| TEXT | 1 | Word is simple text \(default\) |
+| VALUE | 2 | Word is an attribute value |
+| PLACEHOLDER | 3 | Word is from a placeholder |
+| META\_CONTENT | 4 | Word is from meta content header |
+| IFRAME\_SRC | 5 | Word is an iframe source link |
+| IMG\_SRC | 6 | Word is an image source link |
+| IMG\_ALT | 7 | Word is an image alternative description |
+| PDF\_HREF | 8 | Word is a PDF source link |
 
