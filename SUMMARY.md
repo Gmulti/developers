@@ -8,11 +8,12 @@
   * [Get started - Drupal 7](drupal/get-started.md)
 * [Javascript](javascript.md)
 * [Laravel](laravel.md)
+* [Shopify](shopify.md)
+* [Symfony](symfony.md)
 * [WordPress](wordpress/README.md)
   * [Get started](wordpress/installation.md)
   * [Filters](wordpress/filters/README.md)
     * [weglot\_words\_translate](wordpress/filters/weglot_words_translate.md)
-* [Symfony](symfony.md)
 
 ## Developer kits
 
