@@ -107,7 +107,7 @@ Usual return with two basic sentences:
 
 You can find [WordType](reference.md#wordtype) and [BotType](reference.md#bottype) resources at the end of this document.
 
-Here is the request example written in a few flavours:
+Here is a simple request example:
 
 {% tabs %}
 {% tab title="HTTP" %}
@@ -142,66 +142,6 @@ curl -X POST \
       {"w":"This is a black car", "t": 1}
    ]
 }'
-```
-{% endtab %}
-
-{% tab title="Javascript XHR" %}
-```javascript
-var data = JSON.stringify({
-  "l_from": "en",
-  "l_to": "fr",
-  "request_url": "https://www.website.com/",
-  "words": [
-    {
-      "w": "This is a blue car",
-      "t": 1
-    },
-    {
-      "w": "This is a black car",
-      "t": 1
-    }
-  ]
-});
-
-var xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
-
-xhr.addEventListener("readystatechange", function () {
-  if (this.readyState === 4) {
-    console.log(this.responseText);
-  }
-});
-
-xhr.open("POST", "https://api.weglot.com/translate?api_key=my_api_key");
-xhr.setRequestHeader("Content-Type", "application/json");
-
-xhr.send(data);
-```
-{% endtab %}
-
-{% tab title="NodeJS" %}
-```javascript
-var request = require("request");
-
-var options = { method: 'POST',
-  url: 'https://api.weglot.com/translate',
-  qs: { api_key: 'my_api_key' },
-  headers: { 'Content-Type': 'application/json' },
-  body: 
-   { l_from: 'en',
-     l_to: 'fr',
-     request_url: 'https://www.website.com/',
-     words: 
-      [ { w: 'This is a blue car', t: 1 },
-        { w: 'This is a black car', t: 1 } ] },
-  json: true };
-
-request(options, function (error, response, body) {
-  if (error) throw new Error(error);
-
-  console.log(body);
-});
-
 ```
 {% endtab %}
 {% endtabs %}
