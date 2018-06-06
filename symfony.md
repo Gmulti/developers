@@ -85,8 +85,6 @@ There is also a non-required parameters `exclude_blocks` where you can list all 
         - .site-name
 ```
 
-#### 
-
 #### Caching
 
 We implemented usage of cache pool service for both Symfony 4 and Symfony 3 \(`symfony/cache` bundle was released with Symfony 3, so there is no compatibility for Symfony 2\).
