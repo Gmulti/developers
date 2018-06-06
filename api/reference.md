@@ -103,12 +103,6 @@ This endpoint is used as check-alive. You can use it to check if Weglot API is u
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
 
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
@@ -116,13 +110,21 @@ This endpoint is used as check-alive. You can use it to check if Weglot API is u
 
 {% endapi-method-response-example-description %}
 
-```
-
+```javascript
+[]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% hint style="info" %}
+There is no real "content" for this endpoint, you should only get 200 status code.
+{% endhint %}
+
+{% hint style="danger" %}
+This is only a check-alive endpoint, don't spam it.
+{% endhint %}
 
 ## Resources {#resources}
 
