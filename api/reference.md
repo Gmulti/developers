@@ -6,9 +6,9 @@ description: Our API is following REST guidelines and is HTTP based.
 
 ## Authentification
 
-Weglot requires an API key to allow access to its endpoints. You can register and get a Weglot API Key at: [Register](https://dashboard.weglot.com/register).
+Weglot uses API Keys to allow access to the API. You can register a new Weglot API Key at: [Register](https://dashboard.weglot.com/register).
 
-The API key is to be included in all API requests to the server in the URL as the value of the `api_key` parameter, as follows:
+Weglot expects for the API Key to be included in all API requests to the server in the URL as a parameter that looks like the following:
 
 `https://api.weglot.com/endpoint?api_key=my_api_key`
 
@@ -24,23 +24,11 @@ Translate
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint retrieves all translations. It takes an array of sentences in an original language in input and outputs the same array of sentences but translated in another language.
+This endpoint retrieves all translations. It takes an array of sentences in an original languages in input and output the same array of sentences but translated in another languages.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Content-Type" type="string" required=false %}
-application/json
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
-{% api-method-query-parameters %}
-{% api-method-parameter name="api\_key" type="string" required=true %}
-Your Weglot API Key
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-
 {% api-method-body-parameters %}
 {% api-method-parameter type="string" name="l\_from" required=true %}
 ISO 639-1 code of the original language
@@ -104,7 +92,7 @@ Usual return with two basic sentences:
 {% endapi-method-spec %}
 {% endapi-method %}
 
-You can find [WordType](reference.md#wordtype) and [BotType](reference.md#bottype) resources at the end of this document.
+You can found [WordType](reference.md#wordtype) and [BotType](reference.md#bottype) resources at end of this document.
 
 {% api-method method="get" host="https://api.weglot.com" path="/status" %}
 {% api-method-summary %}
@@ -112,7 +100,7 @@ Status
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint is used as a health check. You can use it to check if the Weglot API is up and running.
+This endpoint is used as check-alive. You can use it to check if Weglot API is up and running.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -133,11 +121,11 @@ This endpoint is used as a health check. You can use it to check if the Weglot A
 {% endapi-method %}
 
 {% hint style="info" %}
-No content is returned by this endpoint, you will only get a 200 status code if the service is up and running.
+There is no real "content" for this endpoint, you should only get 200 status code.
 {% endhint %}
 
 {% hint style="danger" %}
-This is only a health check endpoint, don't spam it.
+This is only a check-alive endpoint, don't spam it.
 {% endhint %}
 
 ## Resources {#resources}
@@ -149,7 +137,7 @@ Used to defined the source of a request.
 | **Short-Name** | **Value** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | HUMAN | 0 | Sent from human action |
-| OTHER | 1 | Sent from unknown source |
+| OTHER | 1 | Sent from unknow source |
 | GOOGLE | 2 | Sent from Google Bot |
 | BING | 3 | Sent from Bing Bot |
 | YAHOO | 4 | Sent from Yahoo Bot |
@@ -158,19 +146,17 @@ Used to defined the source of a request.
 
 ### WordType {#wordtype}
 
-Used to provide context over where the text we wish to translate comes from. Any general text node is of WordType **1**.
+Used to defined how a sentence gonna be used.
 
-| **Short name** | **Value** | **Description** |
+| **Short-Name** | **Value** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| OTHER | 0 | None of the elements below \(deprecated\) |
-| TEXT | 1 | General text \(used most of the time\) |
-| VALUE | 2 | The value of an input tag's`value`attribute |
-| PLACEHOLDER | 3 | The value of an input tag's `placeholder`attribute |
-| META\_CONTENT | 4 | The value of a `meta` tags' `content` attribute |
-| IFRAME\_SRC | 5 | The `src` link to a page used in an `iframe` |
-| IMG\_SRC | 6 | The `src`value of an `img`tag |
-| IMG\_ALT | 7 | The `alt` value of an `img`tag |
-| PDF\_HREF | 8 | A URL pointing to a PDF document |
-
-
+| OTHER | 0 | The word is none of the elements below \(deprecated\) |
+| TEXT | 1 | Word is simple text \(used most of the time\) |
+| VALUE | 2 | Word is an attribute value |
+| PLACEHOLDER | 3 | Word is from a placeholder |
+| META\_CONTENT | 4 | Word is from meta content header |
+| IFRAME\_SRC | 5 | Word is an iframe source link |
+| IMG\_SRC | 6 | Word is an image source link |
+| IMG\_ALT | 7 | Word is an image alternative description |
+| PDF\_HREF | 8 | Word is a PDF source link |
 
