@@ -11,10 +11,7 @@
 * [Shopify](integration-guides/shopify.md)
 * [Symfony](integration-guides/symfony.md)
 * [Wix](integration-guides/wix.md)
-* [WordPress](integration-guides/wordpress/README.md)
-  * [Get started](integration-guides/wordpress/get-started.md)
-  * [Filters](integration-guides/wordpress/filters/README.md)
-    * [weglot\_words\_translate](integration-guides/wordpress/filters/weglot_words_translate.md)
+* [WordPress](integration-guides/wordpress.md)
 
 ## Developer kits
 

@@ -8,7 +8,7 @@ Here you can find all resources about our integrations or libraries.
 {% tab title="WordPress" %}
 Integrate Weglot plugin in your WordPress website to start translating and make it multilingual.
 
-[See more](integration-guides/wordpress/)
+[See more](integration-guides/wordpress.md)
 {% endtab %}
 
 {% tab title="Drupal" %}
