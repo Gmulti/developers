@@ -29,12 +29,6 @@ This endpoint retrieves all translations. It takes an array of sentences in an o
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="" type="string" required=false %}
-
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
 {% api-method-body-parameters %}
 {% api-method-parameter type="string" name="l\_from" required=true %}
 ISO 639-1 code of the original language
@@ -76,8 +70,9 @@ Title of the page where these sentences come from
 
 {% endapi-method-response-example-description %}
 
-```
+```javascript
 
+{     "l_from":"en",   "l_to":"fr",   "title":"My awesome page",   "request_url":"https:\/\/www.website.com\/",   "bot":0,   "from_words":[        "This is a blue car",      "This is a black car"   ],   "to_words":[        "C'est une voiture bleue",      "C'est une voiture noire"   ]}
 
 
 ```
