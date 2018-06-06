@@ -24,16 +24,44 @@ Translate
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This endpoint retrieves all translations. It takes an array of sentences in an original languages in input and output the same array of sentences but translated in another languages.
 {% endapi-method-description %}
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
+{% api-method-body-parameters %}
+{% api-method-parameter type="string" name="l\_from" required=true %}
+ISO 639-1 code of the original language
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="l\_to" type="string" required=true %}
+ISO 639-1 code of the destination language
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="" type="string" required=false %}
 
 {% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter required=false name="" type="string" %}
+
+{% endapi-method-parameter %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -58,7 +86,7 @@ Status
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This endpoint is used as check-alive. You can use it to check if Weglot API is up and running.
 {% endapi-method-description %}
 
 {% api-method-spec %}
