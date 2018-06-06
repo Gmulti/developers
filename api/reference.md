@@ -38,15 +38,15 @@ ISO 639-1 code of the original language
 ISO 639-1 code of the destination language
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="words" type="array" required=false %}
+{% api-method-parameter name="words" type="array" required=true %}
 Sentences in original language
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="words\[t\]" type="integer" required=false %}
+{% api-method-parameter name="words\[t\]" type="integer" required=true %}
 Type of the word based on WordType resource
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="words\[w\]" type="string" required=false %}
+{% api-method-parameter name="words\[w\]" type="string" required=true %}
 Sentence to translate
 {% endapi-method-parameter %}
 
@@ -58,7 +58,7 @@ Link to user agent based on BotType resource
 URL where the request come from
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="bot" type="string" %}
+{% api-method-parameter name="title" type="string" %}
 Title of the page where these sentences come from
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
@@ -86,16 +86,6 @@ Usual return with two basic sentences:
       "C'est une voiture noire"
    ]
 }
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=302 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
