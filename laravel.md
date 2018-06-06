@@ -50,17 +50,19 @@ return [
 ];
 ```
 
+#### 
+
 #### Configuration
 
 As usual for Laravel packages, you can publish configuration files by doing:
 
-```bash
-php artisan vendor:publish --provider="Weglot\Translate\TranslateServiceProvider" --tag="config"
+```text
+$ php artisan vendor:publish --provider="Weglot\Translate\TranslateServiceProvider" --tag="config"
 ```
 
 You'll find the configuration file in `config/weglot-translate.php`:
 
-```php
+```text
 <?php
 
 return [
@@ -70,6 +72,8 @@ return [
         'fr'
     ],
     'exclude_blocks' => ['.site-name'],
+    'exclude_urls' => ['\/admin\/.*'],
+    'prefix_path' => '',
     'cache' => false,
 
     'laravel' => [
@@ -84,11 +88,15 @@ This is an example of configuration, enter your own API key, your original langu
 * `api_key` : is your personal API key. You can get an API Key by signing up on [Weglot](https://dashboard.weglot.com/register?origin=7).
 * `original_language` : original language is the language of your website before translation.
 * `destination_languages` : are the languages that you want your website to be translated into.
+* `prefix_path` : if your laravel installation is not on webroot \(ie. something like that: `https://my.website.com/foo/` is your actual root\) set it to specify the path to your laravel installation
 * `cache` : if you wanna use cache or not. It's not a required field and set as false by default. Look at [Caching part](https://github.com/weglot/translate-laravel#caching) for more details.
 * `laravel.controller_namespace` : Used internaly when rewriting routes, change it if your Laravel namespace isn't `App` or your controllers are moved.
 * `laravel.routes_web` : Used internaly when rewriting routes, refer to the file where you have all your web routes.
 
-There is also a non-required parameters `exclude_blocks` where you can list all blocks you don't want to be translated. On this example, you can see that all blocks with the `site-name` class won't be translated.
+There is also a non-required parameters:
+
+* `exclude_blocks` : where you can list all blocks you don't want to be translated. On this example, you can see that all blocks with the `site-name` class won't be translated.
+* `exclude_urls` : you can prevent urls path from being translated \(such as an admin path in this example\)
 
 #### Caching
 
@@ -96,9 +104,9 @@ We implemented usage of `Cache` Facade for our package.
 
 If you wanna use cache, just put the `cache` parameter to true in this package configuration. It will plug onto the Laravel cache behavior.
 
-If you want to clear your translation cache, just use the `weglot:cache:clear` command as following:
+If you wanna clear your translation cache, just use the `weglot:cache:clear` command as following:
 
-```bash
+```text
 $ php artisan weglot:cache:clear
 ```
 
