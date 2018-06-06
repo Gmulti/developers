@@ -50,7 +50,7 @@ Type of the word based on WordType resource
 Sentence to translate
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="bot" required=true type="integer" %}
+{% api-method-parameter name="bot" required=false type="integer" %}
 Link to user agent based on BotType resource
 {% endapi-method-parameter %}
 
