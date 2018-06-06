@@ -29,6 +29,18 @@ This endpoint retrieves all translations. It takes an array of sentences in an o
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Content-Type" type="string" required=false %}
+application/json
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="api\_key" type="string" required=true %}
+Your Weglot API Key
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+
 {% api-method-body-parameters %}
 {% api-method-parameter type="string" name="l\_from" required=true %}
 ISO 639-1 code of the original language
@@ -146,17 +158,19 @@ Used to defined the source of a request.
 
 ### WordType {#wordtype}
 
-Used to defined how a sentence gonna be used.
+Used to provide context over where the text we wish to translate comes from. Any general text node is of WordType **1**.
 
-| **Short-Name** | **Value** | **Description** |
+| **Short name** | **Value** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| OTHER | 0 | The word is none of the elements below \(deprecated\) |
-| TEXT | 1 | Word is simple text \(used most of the time\) |
-| VALUE | 2 | Word is an attribute value |
-| PLACEHOLDER | 3 | Word is from a placeholder |
-| META\_CONTENT | 4 | Word is from meta content header |
-| IFRAME\_SRC | 5 | Word is an iframe source link |
-| IMG\_SRC | 6 | Word is an image source link |
-| IMG\_ALT | 7 | Word is an image alternative description |
-| PDF\_HREF | 8 | Word is a PDF source link |
+| OTHER | 0 | None of the elements below \(deprecated\) |
+| TEXT | 1 | General text \(used most of the time\) |
+| VALUE | 2 | The value of an input tag's`value`attribute |
+| PLACEHOLDER | 3 | The value of an input tag's `placeholder`attribute |
+| META\_CONTENT | 4 | The value of a `meta` tags' `content` attribute |
+| IFRAME\_SRC | 5 | The `src` link to a page used in an `iframe` |
+| IMG\_SRC | 6 | The `src`value of an `img`tag |
+| IMG\_ALT | 7 | The `alt` value of an `img`tag |
+| PDF\_HREF | 8 | A URL pointing to a PDF document |
+
+
 
