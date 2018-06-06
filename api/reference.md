@@ -67,14 +67,11 @@ Title of the page where these sentences come from
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-
+Usual return with 2 basic sentences:
 {% endapi-method-response-example-description %}
 
 ```javascript
-
 {     "l_from":"en",   "l_to":"fr",   "title":"My awesome page",   "request_url":"https:\/\/www.website.com\/",   "bot":0,   "from_words":[        "This is a blue car",      "This is a black car"   ],   "to_words":[        "C'est une voiture bleue",      "C'est une voiture noire"   ]}
-
-
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
