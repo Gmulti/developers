@@ -6,7 +6,15 @@ description: Our API is following REST guidelines and is HTTP based.
 
 ## Authentification
 
-aaa
+Weglot uses API Keys to allow access to the API. You can register a new Weglot API Key at: [Register](https://dashboard.weglot.com/register).
+
+Weglot expects for the API Key to be included in all API requests to the server in the URL as a parameter that looks like the following:
+
+`https://api.weglot.com/endpoint?api_key=my_api_key` 
+
+{% hint style="info" %}
+ Make sure to replace `my_api_key` with your Weglot API key.
+{% endhint %}
 
 ## Endpoints {#endpoints}
 
