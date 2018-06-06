@@ -184,7 +184,7 @@ This is only a health check endpoint, don't spam it.
 
 ### BotType
 
-Used to defined the source of a request.
+Used to define the source of a request.
 
 | **Short-Name** | **Value** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
