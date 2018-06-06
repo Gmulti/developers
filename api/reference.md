@@ -45,23 +45,23 @@ ISO 639-1 code of the destination language
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="words" type="array" required=false %}
-
+Sentences in original language
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="words\[t\]" type="integer" required=false %}
-
+Type of the word based on WordType resource
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="words\[w\]" type="string" required=false %}
-
+Sentence to translate
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="bot" required=true type="integer" %}
-link to user agent : check at BotType resource for more details
+Link to user agent based on BotType resource
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="request\_url" type="string" required=true %}
-
+URL where the request come from
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="bot" type="string" %}
