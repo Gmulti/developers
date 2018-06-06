@@ -1,9 +1,3 @@
----
-description: >-
-  This filter allows you to add words that the plugin couldn't translate.
-  According to help especially to be able to target dynamic words.
----
-
 # weglot\_words\_translate
 
 {% hint style="info" %}

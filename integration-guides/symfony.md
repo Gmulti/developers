@@ -1,7 +1,3 @@
----
-description: Seamless integration of Weglot into your Symfony project.
----
-
 # Symfony
 
 Github repository: [https://github.com/weglot/translate-bundle](https://github.com/weglot/translate-bundle)

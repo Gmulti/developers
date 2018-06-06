@@ -10,10 +10,10 @@ Weglot uses API Keys to allow access to the API. You can register a new Weglot A
 
 Weglot expects for the API Key to be included in all API requests to the server in the URL as a parameter that looks like the following:
 
-`https://api.weglot.com/endpoint?api_key=my_api_key` 
+`https://api.weglot.com/endpoint?api_key=my_api_key`
 
 {% hint style="info" %}
- Make sure to replace `my_api_key` with your Weglot API key.
+Make sure to replace `my_api_key` with your Weglot API key.
 {% endhint %}
 
 ## Endpoints {#endpoints}
@@ -43,7 +43,7 @@ Sentences in original language
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="words\[t\]" type="integer" required=true %}
-Type of the word based on [WordType](#wordtype) resource
+Type of the word based on WordType resource
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="words\[w\]" type="string" required=true %}
@@ -51,7 +51,7 @@ Sentence to translate
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="bot" required=false type="integer" %}
-Link to user agent based on [BotType](#bottype) resource
+Link to user agent based on BotType resource
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="request\_url" type="string" required=true %}
@@ -91,6 +91,8 @@ Usual return with two basic sentences:
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+You can found [WordType](reference.md#wordtype) and [BotType](reference.md#bottype) resources at end of this document.
 
 {% api-method method="get" host="https://api.weglot.com" path="/status" %}
 {% api-method-summary %}

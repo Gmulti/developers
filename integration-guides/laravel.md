@@ -1,7 +1,3 @@
----
-description: Seamless integration of Weglot into your Laravel project.
----
-
 # Laravel
 
 Github repository: [https://github.com/weglot/translate-laravel](https://github.com/weglot/translate-laravel)

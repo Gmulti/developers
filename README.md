@@ -1,9 +1,3 @@
----
-description: >-
-  Welcome to the developers documentation. Here are some resources to use
-  extended function of Weglot
----
-
 # Introduction
 
 Here you can find all resources about our integrations or libraries.
@@ -14,13 +8,13 @@ Here you can find all resources about our integrations or libraries.
 {% tab title="WordPress" %}
 Integrate Weglot plugin in your WordPress website to start translating and make it multilingual.
 
-[See more](wordpress/)
+[See more](integration-guides/wordpress/)
 {% endtab %}
 
 {% tab title="Drupal" %}
 Integrate Weglot plugin in your Drupal website to start translating and make it multilingual.
 
-[See more](drupal/)
+[See more](integration-guides/drupal/)
 {% endtab %}
 {% endtabs %}
 
@@ -28,11 +22,11 @@ Integrate Weglot plugin in your Drupal website to start translating and make it 
 
 {% tabs %}
 {% tab title="Laravel" %}
-[See more](laravel.md)
+[See more](integration-guides/laravel.md)
 {% endtab %}
 
 {% tab title="Symfony" %}
-[See more](symfony.md)
+[See more](integration-guides/symfony.md)
 {% endtab %}
 {% endtabs %}
 

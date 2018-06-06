@@ -1,7 +1,3 @@
----
-description: All resources about the WordPress plugin for developers
----
-
 # WordPress
 
 ## Introduction

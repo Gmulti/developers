@@ -4,21 +4,21 @@
 
 ## Integration guides
 
-* [Drupal](drupal/README.md)
-  * [Get started - Drupal 7](drupal/get-started.md)
-* [Javascript](javascript.md)
-* [Laravel](laravel.md)
-* [Shopify](shopify.md)
-* [Symfony](symfony.md)
-* [Wix](wix.md)
-* [WordPress](wordpress/README.md)
-  * [Get started](wordpress/installation.md)
-  * [Filters](wordpress/filters/README.md)
-    * [weglot\_words\_translate](wordpress/filters/weglot_words_translate.md)
+* [Drupal](integration-guides/drupal/README.md)
+  * [Get started - Drupal 7](integration-guides/drupal/get-started-drupal-7.md)
+* [Javascript](integration-guides/javascript.md)
+* [Laravel](integration-guides/laravel.md)
+* [Shopify](integration-guides/shopify.md)
+* [Symfony](integration-guides/symfony.md)
+* [Wix](integration-guides/wix.md)
+* [WordPress](integration-guides/wordpress/README.md)
+  * [Get started](integration-guides/wordpress/get-started.md)
+  * [Filters](integration-guides/wordpress/filters/README.md)
+    * [weglot\_words\_translate](integration-guides/wordpress/filters/weglot_words_translate.md)
 
 ## Developer kits
 
-* [PHP](developer-.-kits/php.md)
+* [PHP](developer-kits/php.md)
 
 ## API
 

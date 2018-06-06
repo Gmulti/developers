@@ -1,7 +1,3 @@
----
-description: A guide for Weglot's client Javascript integration
----
-
 # Javascript
 
 ## Getting started
