@@ -6,9 +6,9 @@ description: Our API is following REST guidelines and is HTTP based.
 
 ## Authentification
 
-Weglot uses API Keys to allow access to the API. You can register a new Weglot API Key at: [Register](https://dashboard.weglot.com/register).
+Weglot requires an API key to allow access to its endpoints. You can register and get a Weglot API Key at: [Register](https://dashboard.weglot.com/register).
 
-Weglot expects for the API Key to be included in all API requests to the server in the URL as a parameter that looks like the following:
+The API key is to be included in all API requests to the server in the URL as the value of the `api_key` parameter, as follows:
 
 `https://api.weglot.com/endpoint?api_key=my_api_key`
 
@@ -24,7 +24,7 @@ Translate
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint retrieves all translations. It takes an array of sentences in an original languages in input and output the same array of sentences but translated in another languages.
+This endpoint retrieves all translations. It takes an array of sentences in an original language in input and outputs the same array of sentences but translated in another language.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -92,7 +92,7 @@ Usual return with two basic sentences:
 {% endapi-method-spec %}
 {% endapi-method %}
 
-You can found [WordType](reference.md#wordtype) and [BotType](reference.md#bottype) resources at end of this document.
+You can find [WordType](reference.md#wordtype) and [BotType](reference.md#bottype) resources at the end of this document.
 
 {% api-method method="get" host="https://api.weglot.com" path="/status" %}
 {% api-method-summary %}
@@ -100,7 +100,7 @@ Status
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint is used as check-alive. You can use it to check if Weglot API is up and running.
+This endpoint is used as a health check. You can use it to check if the Weglot API is up and running.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -121,11 +121,11 @@ This endpoint is used as check-alive. You can use it to check if Weglot API is u
 {% endapi-method %}
 
 {% hint style="info" %}
-There is no real "content" for this endpoint, you should only get 200 status code.
+No content is returned by this endpoint, you will only get a 200 status code if the service is up and running.
 {% endhint %}
 
 {% hint style="danger" %}
-This is only a check-alive endpoint, don't spam it.
+This is only a health check endpoint, don't spam it.
 {% endhint %}
 
 ## Resources {#resources}
@@ -137,7 +137,7 @@ Used to defined the source of a request.
 | **Short-Name** | **Value** | **Description** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | HUMAN | 0 | Sent from human action |
-| OTHER | 1 | Sent from unknow source |
+| OTHER | 1 | Sent from unknown source |
 | GOOGLE | 2 | Sent from Google Bot |
 | BING | 3 | Sent from Bing Bot |
 | YAHOO | 4 | Sent from Yahoo Bot |
