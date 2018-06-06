@@ -43,7 +43,7 @@ Sentences in original language
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="words\[t\]" type="integer" required=true %}
-Type of the word based on WordType resource
+Type of the word based on [WordType](#wordtype) resource
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="words\[w\]" type="string" required=true %}
@@ -51,7 +51,7 @@ Sentence to translate
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="bot" required=false type="integer" %}
-Link to user agent based on BotType resource
+Link to user agent based on [BotType](#bottype) resource
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="request\_url" type="string" required=true %}
