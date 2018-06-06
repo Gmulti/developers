@@ -67,7 +67,7 @@ Title of the page where these sentences come from
 {% api-method-response %}
 {% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
-Usual return with 2 basic sentences:
+Usual return with two basic sentences:
 {% endapi-method-response-example-description %}
 
 ```javascript
@@ -86,6 +86,16 @@ Usual return with 2 basic sentences:
       "C'est une voiture noire"
    ]
 }
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=302 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
