@@ -29,6 +29,12 @@ This endpoint retrieves all translations. It takes an array of sentences in an o
 
 {% api-method-spec %}
 {% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
 {% api-method-body-parameters %}
 {% api-method-parameter type="string" name="l\_from" required=true %}
 ISO 639-1 code of the original language
@@ -38,28 +44,28 @@ ISO 639-1 code of the original language
 ISO 639-1 code of the destination language
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="" type="string" required=false %}
+{% api-method-parameter name="words" type="array" required=false %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="" type="string" required=false %}
+{% api-method-parameter name="words\[t\]" type="integer" required=false %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="" type="string" required=false %}
+{% api-method-parameter name="words\[w\]" type="string" required=false %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="" type="string" required=false %}
+{% api-method-parameter name="bot" required=true type="integer" %}
+link to user agent : check at BotType resource for more details
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="request\_url" type="string" required=true %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="" type="string" required=false %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter required=false name="" type="string" %}
-
+{% api-method-parameter name="bot" type="string" %}
+Title of the page where these sentences come from
 {% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
