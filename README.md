@@ -4,6 +4,8 @@ Here you can find all resources about our integrations or libraries.
 
 ## Integration Guides
 
+When you use Weglot, you want one of theses for high-level interaction with the API.
+
 * [Drupal 7](integration-guides/drupal.md#getting-started)
 * [Javascript](integration-guides/javascript.md#getting-started)
 * [Laravel](integration-guides/laravel.md#installation)
@@ -16,5 +18,5 @@ Here you can find all resources about our integrations or libraries.
 
 Here are the list of supported **programming languages** through our Developer Kits:
 
-* [PHP](developer-kits/php.md#installation) low-level kit to communicate with the Weglot API and some other usefull tools 
+* [PHP](developer-kits/php.md#installation): low-level kit to communicate with the Weglot API and some other usefull tools 
 
