@@ -241,7 +241,7 @@ When the links are "hooked", the original `href` attribute also gets removed, an
 
 ### Example - Anchor
 
-You want to use the native Menu feature of your CMS, or simply wish to build your own switcher simply. Let's say my original language is English, and I want to translate to French and Spanish.
+I want to use the native menu feature of my CMS. Let's say my original language is English, and I want to translate to French and Spanish.
 
 My menu would have 3 entries, as follows:
 
@@ -251,7 +251,7 @@ My menu would have 3 entries, as follows:
 | Français | \#Weglot-fr |
 | Español | \#Weglot-es |
 
-I have now a language switcher that works for all these languages. If I need to apply specific styling to the current language, I can target the `weglot-link--active`class.
+I have now a "native" language switcher that works for all these languages. If I need to apply specific styling to the current language, I can target the `weglot-link--active`class.
 
 ### Example - Fake link
 
