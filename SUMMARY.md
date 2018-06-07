@@ -4,8 +4,7 @@
 
 ## Integration guides
 
-* [Drupal](integration-guides/drupal/README.md)
-  * [Get started - Drupal 7](integration-guides/drupal/get-started-drupal-7.md)
+* [Drupal](integration-guides/drupal.md)
 * [Javascript](integration-guides/javascript.md)
 * [Laravel](integration-guides/laravel.md)
 * [Shopify](integration-guides/shopify.md)

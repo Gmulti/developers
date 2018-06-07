@@ -25,7 +25,7 @@ To use the library, use Composer's [autoload](https://getcomposer.org/doc/01-bas
 require_once __DIR__. '/vendor/autoload.php';
 ```
 
-## Getting Started
+## Getting started
 
 ### Bundle Register
 

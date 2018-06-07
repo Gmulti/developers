@@ -30,15 +30,15 @@ In order to translate your website, Weglot needs to know the original language o
 
 You can do it going to configure your languages with the Local module.​
 
-![](../../.gitbook/assets/drupal5.png)
+![](../.gitbook/assets/drupal5.png)
 
-![](../../.gitbook/assets/drupal6.png)
+![](../.gitbook/assets/drupal6.png)
 
 ### 5/ Translate !
 
 Finish ! You can go on your website. A language selector will appear at the bottom right.​
 
-![](../../.gitbook/assets/drupal7.png)
+![](../.gitbook/assets/drupal7.png)
 
 ​
 
