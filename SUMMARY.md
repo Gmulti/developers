@@ -4,7 +4,7 @@
 
 ## Integration guides
 
-* [Drupal - 7](integration-guides/drupal.md)
+* [Drupal 7](integration-guides/drupal.md)
 * [Javascript](integration-guides/javascript.md)
 * [Laravel](integration-guides/laravel.md)
 * [Shopify](integration-guides/shopify.md)

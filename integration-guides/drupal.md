@@ -2,7 +2,7 @@
 description: Drupal 7
 ---
 
-# Drupal - 7
+# Drupal 7
 
 ## Requirements modules {#requirements-modules}
 

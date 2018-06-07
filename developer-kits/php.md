@@ -69,7 +69,7 @@ With this class we have `Weglot\Client\Profile` which represent particularities 
 * 36-char API Keys: Adding `ignoredNodes` behavior, basically we skip some tags from being parsed as sentences \(such as `strong`, `em`, ...\) to make bigger sentences.
 
 {% hint style="warning" %}
-Since 09/05/2018 we only deliver 36-char API Keys
+Since the 09/05/2018 we only deliver 36-char API Keys
 {% endhint %}
 
 #### **API**
