@@ -2,35 +2,19 @@
 
 Here you can find all resources about our integrations or libraries.
 
-## CMS Integrations
+## Integration Guides
 
-{% tabs %}
-{% tab title="WordPress" %}
-Integrate Weglot plugin in your WordPress website to start translating and make it multilingual.
+* [Drupal 7](integration-guides/drupal.md#getting-started)
+* [Javascript](integration-guides/javascript.md#getting-started)
+* [Laravel](integration-guides/laravel.md#installation)
+* [Shopify](integration-guides/shopify.md)
+* [Symfony](integration-guides/symfony.md#installation)
+* [Wix](integration-guides/wix.md#getting-started)
+* [Wordpress](integration-guides/wordpress.md#getting-started)
 
-[See more](integration-guides/wordpress.md)
-{% endtab %}
+## Developer Kits
 
-{% tab title="Drupal" %}
-Integrate Weglot plugin in your Drupal website to start translating and make it multilingual.
+Here are the list of supported **programming languages** through our Developer Kits:
 
-[See more](integration-guides/drupal.md)
-{% endtab %}
-{% endtabs %}
-
-## Framework Integrations
-
-{% tabs %}
-{% tab title="Laravel" %}
-[See more](integration-guides/laravel.md)
-{% endtab %}
-
-{% tab title="Symfony" %}
-[See more](integration-guides/symfony.md)
-{% endtab %}
-{% endtabs %}
-
-## Libraries
-
-You can check libraries documentation on following link: [https://weglot.github.io/documentation/](https://weglot.github.io/documentation/)
+* [PHP](developer-kits/php.md#installation) low-level kit to communicate with the Weglot API and some other usefull tools 
 
