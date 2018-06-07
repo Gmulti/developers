@@ -1,5 +1,5 @@
 ---
-description: Drupal 7
+description: The complete integration guide to Drupal 7
 ---
 
 # Drupal 7
