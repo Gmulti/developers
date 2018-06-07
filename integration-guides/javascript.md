@@ -228,22 +228,40 @@ This is the version any Jimdo user should use.
 
 ## Link hooks
 
-By default, Weglot will show a language switcher on your page. Either on the bottom-right side or where it has been set through the `switchers` options. In some cases, you might want to not use Weglot's switcher at all and use menu entries from the CMS you're integrating in.
+By default, Weglot will show a language switcher on your page. Either on the bottom-right side or where it has been set through the `switchers` options. In some cases, you might want to not use Weglot's switcher at all and use menu entries from the CMS you're integrating in. You might also want to create your own switcher and not use Weglot's CSS.
 
 When Weglot gets initialized, every link that matches one of these CSS selectors will be "hooked" to a `Weglot.switchTo` action automatically:
 
 * `a[href='#Weglot-xx']`
 * `a[href$='change-language.weglot.com/xx']`
 
-... where `xx` is the ISO-639-1 code of the target Language
+... where `xx` is the ISO-639-1 code of the target language
 
-When the links are "hooked", the original `href` attribute also gets removed.
+When the links are "hooked", the original `href` attribute also gets removed, and the class `weglot-link` is added to them. The current language also has the class  `weglot-link--active`
 
-### Example 1
+### Example - Anchor
 
-You want to use the native Menu feature of your CMS, or simply wish to build your own switcher simply. Let's say my original language is 
+You want to use the native Menu feature of your CMS, or simply wish to build your own switcher simply. Let's say my original language is English, and I want to translate to French and Spanish.
 
+My menu would have 3 entries, as follows:
 
+| **Text** | **Link** |
+| --- | --- | --- | --- |
+| English | \#Weglot-en |
+| Français | \#Weglot-fr |
+| Español | \#Weglot-es |
+
+I have now a language switcher that works for all these languages. If I need to apply specific styling to the current language, I can target the `weglot-link--active`class.
+
+### Example - Fake link
+
+Sometimes, the CMS you will be using won't allow for anchor links in the menu \(e.g. Wix\). In this case, you can use fake links that will be replaced when Weglot initializes:
+
+| **Text** | **Link** |
+| --- | --- | --- | --- |
+| English | http://change-language.weglot.com/en |
+| Français | http://change-language.weglot.com/fr |
+| Español | http://change-language.weglot.com/es |
 
 
 
