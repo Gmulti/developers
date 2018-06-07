@@ -68,6 +68,10 @@ With this class we have `Weglot\Client\Profile` which represent particularities 
 * 35-char API Keys: Normal API Keys with no custom functions enabled.
 * 36-char API Keys: Adding `ignoredNodes` behavior, basically we skip some tags from being parsed as sentences \(such as `strong`, `em`, ...\) to make bigger sentences.
 
+{% hint style="warning" %}
+Since 09/05/2018 we only deliver 36-char API Keys
+{% endhint %}
+
 #### **API**
 
 Includes all the objects to talk with the API \(as input or output\).
