@@ -66,7 +66,7 @@ A full example could look like this:
 Weglot.setup({
   api_key: "wg_1234567897e2ea993d291b571c2ec93b0",
   originalLanguage: "en",
-  destinationLanguages : "ar,fr",
+  destinationLanguages : "es,fr",
   styleOpt : { fullname: true , withname: true , is_dropdown: true , classF: "wg-flags flag-3" },
   exceptions: "#not-this-element,.not-this-class.p",
   excludePaths: "",
@@ -225,6 +225,25 @@ This is the version any Wix user should use, as it loads the Weglot app once the
 Available at _https://cdn.weglot.com/weglot\_jimdo.min.js_
 
 This is the version any Jimdo user should use.
+
+## Link hooks
+
+By default, Weglot will show a language switcher on your page. Either on the bottom-right side or where it has been set through the `switchers` options. In some cases, you might want to not use Weglot's switcher at all and use menu entries from the CMS you're integrating in.
+
+When Weglot gets initialized, every link that matches one of these CSS selectors will be "hooked" to a `Weglot.switchTo` action automatically:
+
+* `a[href='#Weglot-xx']`
+* `a[href$='change-language.weglot.com/xx']`
+
+... where `xx` is the ISO-639-1 code of the target Language
+
+When the links are "hooked", the original `href` attribute also gets removed.
+
+### Example 1
+
+You want to use the native Menu feature of your CMS, or simply wish to build your own switcher simply. Let's say my original language is 
+
+
 
 
 
