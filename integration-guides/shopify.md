@@ -83,7 +83,7 @@ In `weglot_hreftags.liquid`, replace the line `{% assign sub_domains = false %}`
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-### Send language information to Klaviyo
+### Send language data to Klaviyo
 
 #### Through a signup form
 
