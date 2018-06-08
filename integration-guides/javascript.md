@@ -279,7 +279,9 @@ If your original language is English, and your destination languages are French 
 | es.mywebsite.com | Spanish |
 | something.mywebsite.com | English |
 
-In this setup, **it's your responsibility** to set the right CNAME records so that `fr.mywebsite.com` and `es.mywebsite.com` point to the same server
+In this setup, **it's your responsibility** to set the right CNAME records so that `fr.mywebsite.com` and `es.mywebsite.com` point to the same server.
+
+Any switcher or link hook set will keep working under this setup. They will redirect to the right hostname upon change.
 
 
 
