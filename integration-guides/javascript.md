@@ -36,11 +36,11 @@ Weglot.setup(options)
 
 Where `options` is a Javascript object with properties defined as follows. Only **`api_key`**, **`originalLanguage`** and **`destinationLanguages`** \(in bold\) are required.
 
-| Property | Description | Default | Example\(s\) |
+| Property | Description | Default | Example |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **`api_key`** | Your Weglot API Key | / | / |
-| **`originalLanguage`** | The ISO 639-1 code of the original language of your website | / | `"en"` |
-| **`destinationLanguages`** | A comma-separated list of 2-letter codes of languages you wish to be able to translate your website to. | / | `"fr,es"` |
+| **`api_key`** | Your Weglot API Key |  |  |
+| **`originalLanguage`** | The ISO 639-1 code of the original language of your website |  | `"en"` |
+| **`destinationLanguages`** | A comma-separated list of 2-letter codes of languages you wish to be able to translate your website to. |  | `"fr,es"` |
 | `styleOpt` | A javascript object describing the default styling of the Weglot language switcher button |  | `{ fullname: true, withname: true, is_dropdown: true, classF: '' }` |
 | `styleOpt["withname"]` | `true` to display a label text next to each language options. `false` otherwise | `true` |  |
 | `styleOpt["fullname"]` | If `withname` is `true`, `true` to display the full name of the language.`false` to just show the 2-letter language code | `true` |  |
