@@ -54,6 +54,7 @@ Where `options` is a Javascript object with properties defined as follows. Only 
 * `excludePaths`: A comma-separated list of paths to exclude from translations. It's a regex string that the current path will be tested against.
 * `waitTransition`: `1` or `true` to prevent content blinking when translating a new page. Defaults to `false`.
 * `translateSearch`: `1` or `true` to translate search queries on the website, `O` or `false` otherwise. Defaults to `false`.
+* `subDomain`: `true` to enable the [subdomain mode](javascript.md#subdomain-mode). Defaults to `false`
 * `hideSwitcher` : `true` to prevent Weglot from creating language switchers, `false` otherwise. Defaults to `false`.  If you set it to `true`, it's your responsibility to use the Cleint-side API or link hooks to change languages on the page
 * `switchers`: A javascript Array of Objects with the following properties:
   * `styleOpt`: defined exactly as the main styleOpt
@@ -258,10 +259,27 @@ I have now a "native" language switcher that works for all these languages. If I
 Sometimes, the CMS you will be using won't allow for anchor links in the menu \(e.g. Wix\). In this case, you can use fake links that will be replaced when Weglot initializes:
 
 | **Text** | **Link** |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | English | http://change-language.weglot.com/en |
 | Français | http://change-language.weglot.com/fr |
-| Español | http://change-language.weglot.com/es |
+
+
+
+## Subdomain mode
+
+Passing `subDomain: true`on the initialization allows Weglot to auto-detect new the visitor's subdomain to set the target language. In this case, the language preference is not stored, and the browser's preferred language is ignored.
+
+If your original language is english, and your destination languages are French and Spanish, this assumes the following setup:
+
+| Hostname delivering the website | Language set by Weglot |
+| --- | --- | --- | --- | --- | --- |
+| www.mywebsite.com | English |
+| mywebsite.com | English |
+| fr.mywebsite.com | French |
+| es.mywebsite.com | Spanish |
+| something.mywebsite.com | English |
+
+In this setup, **it's your responsibility** to set the right CNAME records so that `fr.mywebsite.com` and `es.mywebsite.com` point to the same server
 
 
 
