@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Weglot Developer Documentation](README.md)
+* [Developer Documentation](README.md)
 
 ## Integration guides
 

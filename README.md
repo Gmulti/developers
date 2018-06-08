@@ -1,4 +1,4 @@
-# Weglot Developer Documentation
+# Developer Documentation
 
 Here you can find all resources about our integrations or libraries.
 
