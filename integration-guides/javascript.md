@@ -207,7 +207,7 @@ Available at _https://cdn.weglot.com/weglot\_shopify.min.js_
 
 This is the version used by Weglot's [Shopify app](https://apps.shopify.com/weglot). It's included automatically for you, hence we advise you to use our app directly for any Shopify store as some features come only from the app \(Checkout translation, drag-and-drop placement, etc.\)
 
-This version adds a few Shopify-specific options and features, sets the user language for each order and integrates to the right
+This version adds a few Shopify-specific options and features.
 
 ### **Bigcommerce**
 
