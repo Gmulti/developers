@@ -92,8 +92,6 @@ Weglot.setup({
 
 ## Client-side API
 
-All the following entries are attributes of the **Weglot** window variable. Hence, **getCurrentLang\(\)** can be called from the window context by calling **Weglot.getCurrentLang\(\)**
-
 ### Weglot.getCurrentLang\(\)
 
 {% tabs %}
@@ -142,18 +140,30 @@ You can subscribe your own code to Weglot-specific events. When these events occ
 
 This is called right after a language has changed on the page
 
-`Weglot.on("languageChanged", callbackFunction)`
+```javascript
+Weglot.on("languageChanged", callbackFunction)
+```
 
 The callback function will be called with two optional arguments:
 
 1. newLanguage \(String\): the 2-letter code of the language the page changed to
 2. previousLanguage \(String\): the 2-letter code of the previous language of the page
 
+Example:
+
+```javascript
+Weglot.on("languageChanged", function(newLang, prevLang) {
+    console.log("The language on the page just changed to: " + newLang)
+})
+```
+
 #### initialized
 
 This is called right after the call to **Weglot.setup\(options\)** has been successful. The language switchers are now displayed and the nodes to translate are prepared. 
 
-`Weglot.on("initialized", callbackFunction)`
+```javascript
+Weglot.on("initialized", callbackFunction)
+```
 
 The callback function will be called with no argument.
 
@@ -195,13 +205,13 @@ Depending on the version you would like to use, you may want to change first lin
 <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
 ```
 
-### **Standard**
+#### **Standard**
 
 Available at _https://cdn.weglot.com/weglot.min.js_
 
 Use this version when you're not installing Weglot on one of our supported platforms \(Shopify, Wix, Bigcommerce, etc.\)
 
-### Shopify
+#### Shopify
 
 Available at _https://cdn.weglot.com/weglot\_shopify.min.js_ 
 
@@ -209,19 +219,19 @@ This is the version used by Weglot's [Shopify app](https://apps.shopify.com/wegl
 
 This version adds a few Shopify-specific options and features.
 
-### **Bigcommerce**
+#### **Bigcommerce**
 
 Available at _https://cdn.weglot.com/weglot\_bigcommerce.min.js_
 
 This is the version used by the [Bigcommerce app](https://www.bigcommerce.com/apps/weglot-translate/). It adds some convenience options that help setting the right customer language along the way, as well as support for cart drawers.
 
-### **Wix**
+#### **Wix**
 
 Available at _https://cdn.weglot.com/weglot\_wix.min.js_
 
 This is the version any Wix user should use, as it loads the Weglot app once the Wix website has been initialised properly.
 
-### **Jimdo**
+#### **Jimdo**
 
 Available at _https://cdn.weglot.com/weglot\_jimdo.min.js_
 
