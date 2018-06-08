@@ -83,3 +83,30 @@ In `weglot_hreftags.liquid`, replace the line `{% assign sub_domains = false %}`
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+### Send language information to Klaviyo
+
+#### Through a signup form
+
+This guide will add an extra property called `lang` to each user that signs up through a Klaviyo form on your website. It's then up to you to create segments on Klaviyo to send them emails of different languages.
+
+First, locate the HTML ID of the Klaviyo signup form on your page \(Usually `email_subscribe`\). The selector to that form is then `#email_subscribe`
+
+Include the following snippet in your HTML code. Make sure you include it **after** both `Weglot` and `KlaviyoSubscribe` are included. Make sure you replace `#email_subscribe` with the actual selector to the form.
+
+```markup
+<script>
+function() {
+  var attachLangToKlaviyo = function(lang) {
+    KlaviyoSubscribe.attachToForms('#email_subscribe', {
+      hide_form_on_success: true,
+      extra_properties: {
+        $lang: lang
+      }
+    })  
+  }
+  attachLangToKlaviyo(Weglot.getCurrentLang())
+  Weglot.on('languageChanged', attachLangToKlaviyo)
+}()
+</script>
+```
+
