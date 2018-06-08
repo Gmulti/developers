@@ -83,6 +83,14 @@ In `weglot_hreftags.liquid`, replace the line `{% assign sub_domains = false %}`
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+#### Step 3
+
+Enjoy your multi-domain setup!
+
+A visit to www.mystore.com or mystore.com shows you your website in English. You can still use your switcher\(s\) to change the language.
+
+A visit to fr.mystore.com shows your the website in French, and Google bots are now notified that the French version of your website is at fr.mystore.com/
+
 ### Send language data to Klaviyo
 
 #### Through a signup form
