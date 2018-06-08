@@ -16,7 +16,9 @@ When you use Weglot, you want one of theses for high-level interaction with the 
 
 ## Developer Kits
 
-Here are the list of supported **programming languages** through our Developer Kits, they contain both API communication and some usefull tools:
+Here is the list of the **programming languages** we support through our Developer Kits.
+
+Each kit contains both API communication and some useful tools.
 
 * [PHP](developer-kits/php.md#installation)
 
