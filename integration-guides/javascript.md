@@ -277,7 +277,7 @@ Sometimes, the CMS you will be using won't allow for anchor links in the menu \(
 
 ## Subdomain mode
 
-Passing `subDomain: true`on the initialization allows Weglot to auto-detect new the visitor's subdomain to set the target language. In this case, the language preference is not stored, and the browser's preferred language is ignored.
+Passing `subDomain: true`on the initialization call allows Weglot to match the current subdomain to a target language. In this case, the preferred language is not stored over sessions, and the browser's preferred language \(`autoSwitch` option\) is ignored.
 
 If your original language is English, and your destination languages are French and Spanish, this assumes the following setup:
 
