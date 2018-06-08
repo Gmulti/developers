@@ -54,7 +54,7 @@ Where `options` is a Javascript object with properties defined as follows. Only 
 | `subDomain` | `true` to enable the [subdomain mode](javascript.md#subdomain-mode) | `false` |  |
 | `hideSwitcher` | `true` to prevent Weglot from creating language switchers, false otherwise. Defaults to false. If you set it to true, it's your responsibility to use the [Client-side API](javascript.md#weglot-switchto-code) or [link hooks](javascript.md#link-hooks) to change languages on the page | `false` |  |
 | `translateSearch` | `true` to translate search queries on the website, `false` otherwise.  | `false` |  |
-| `searchsForms` | A comma-separated list of CSS selectors of search form elements to watch for. Useful only if `translateSearch` is true. The form has to send a `q` parameter for it to work | `""` |  |
+| `searchsForms` | A comma-separated list of CSS selectors of search form elements to watch for. Useful only if `translateSearch` is `true`. The form has to send a `q` parameter for it to work | `""` |  |
 | `switchers` | A Javascript Array of Objects representing several language switchers on the page | `[]` |  |
 | `switchers[]["styleOpt"]` | A Javascript Object defined exactly like `styleOpt` |  |  |
 | `switchers[]["target"]` | The CSS selector of the node that the switcher will be a child of |  | `".site-header__section--title"` |
