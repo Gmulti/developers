@@ -8,7 +8,7 @@
 This feature is using the [Subdomain mode](javascript.md#subdomain-mode) of the Javascript library. Feel free to read more about it there
 {% endhint %}
 
-In this example, we're gonna assume that your original language is English \(en\), and that you want to provide dedicated subdomains to your two other languages, French \(fr\) and Spanish \(es\). The primary domain of your Shopify store is www.mystore.com
+In this example, we're gonna assume that your original language is English \(en\), and that you want to provide dedicated subdomains to your two other languages, French \(fr\) and Spanish \(es\). The primary domain of your Shopify store is either www.mystore.com or mystore.com
 
 #### Step 1: Adding new subdomains to your Shopify store
 
