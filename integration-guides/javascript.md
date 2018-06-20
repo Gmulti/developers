@@ -211,6 +211,8 @@ Available at _https://cdn.weglot.com/weglot.min.js_
 
 Use this version when you're not installing Weglot on one of our supported platforms \(Shopify, Wix, Bigcommerce, etc.\)
 
+The standard library works well with CMS such as Squarespace, Webflow, or any other website.
+
 #### Shopify
 
 Available at _https://cdn.weglot.com/weglot\_shopify.min.js_ 
