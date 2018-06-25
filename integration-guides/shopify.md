@@ -12,7 +12,7 @@ In this example, we're gonna assume that your original language is English \(en\
 
 #### Step 1: Adding new subdomains to your Shopify store
 
-We now need to add **fr.mystore.com** and **es.mystore.com** to the domains connected to your store. Please follow [this guide from Shopify](https://help.shopify.com/manual/domains/connecting-existing-domains/setting-up-your-domain#connect-a-subdomain) to do so.
+We now need to add **fr.mystore.com** and **es.mystore.com** to the domains connected to your store. Please follow [this guide from Shopify](https://help.shopify.com/manual/domains/connecting-existing-domains/setting-up-your-domain#connect-a-subdomain) to do so. Make sure you disable the automatic redirection to the primary domain.
 
 #### Step 2: Enabling the subdomain mode
 
