@@ -93,7 +93,7 @@ A visit to fr.mystore.com shows your the website in French, and Google bots are 
 
 ### Send language data to Klaviyo
 
-#### Through a signup form
+#### Through a Klaviyo signup form
 
 This guide will add an extra property called `lang` to each user that signs up through a Klaviyo form on your website. It's then up to you to create segments on Klaviyo to send them emails of different languages.
 
@@ -114,6 +114,26 @@ function() {
   }
   attachLangToKlaviyo(Weglot.getCurrentLang())
   Weglot.on('languageChanged', attachLangToKlaviyo)
+}()
+</script>
+```
+
+#### Through Klaviyo's Web Tracking Snippet
+
+1. Make sure you're already using [Klaviyo's Web Tracking Snippet](https://help.klaviyo.com/hc/en-us/articles/115000751052-Klaviyo-API-Reference-Guide#the-klaviyo-web-tracking-snippet--javascript-2) on your website
+2. Include the following code after both Klaviyo's Web Tracking code and Weglot's switcher code:
+
+```javascript
+<script>
+var _learnq = _learnq || [];
+function() {
+  var identifyLanguageToKlaviyo = function(lang) {
+    _learnq.push(['identify', {
+      $lang: lang
+    }]);
+  }
+  identifyLanguageToKlaviyo(Weglot.getCurrentLang())
+  Weglot.on('languageChanged', identifyLanguageToKlaviyo)
 }()
 </script>
 ```
