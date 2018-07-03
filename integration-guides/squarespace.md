@@ -6,7 +6,7 @@ description: How to Integrate Weglot on your Squarespace website
 
 ## Using Weglot JS
 
-More to come...
+Follow the [Getting started guide](javascript.md#getting-started). You can also use [link hooks](javascript.md#link-hooks) to create Squarespace native menu entries to Switch language.
 
 ## Using Weglot Translation Network \(private feature\)
 
