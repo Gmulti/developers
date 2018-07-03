@@ -8,6 +8,7 @@
 * [Javascript](integration-guides/javascript.md)
 * [Laravel](integration-guides/laravel.md)
 * [Shopify](integration-guides/shopify.md)
+* [Squarespace](integration-guides/squarespace.md)
 * [Symfony](integration-guides/symfony.md)
 * [Wix](integration-guides/wix.md)
 * [WordPress](integration-guides/wordpress.md)
