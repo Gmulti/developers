@@ -22,7 +22,29 @@ Features include:
 
 ### Step 1: Get in touch with us
 
-Write an email 
+Write an email to support@weglot.com, mentioning that you want to use Weglot Translation Network for your Squarespace website. Also mention:
+
+* The URL to your current Squarespace website \(eg.: mywebsite.com\)
+* The extra languages that you want to start with \(eg.: French, Spanish, Arabic\)
+
+### Step 2: We get back to you
+
+We will get back to you with clear instructions on some DNS records to create.
+
+* One CNAME record to verify your ownership of the domain and issue an SSL certificate on your behalf
+* One CNAME record for each language that you wish to add
+
+### Step 3: Enjoy!
+
+Once you have confirmed that the records were properly created, we will add your website to Weglot's Translation Network. It will take approximately 1 hour in business hours for us to get back to you with a confirmation that your websites are ready. Your websites:
+
+* fr.mywebsite.com
+* es.mywebsite.com
+* ar.mywebsite.com
+
+are now ready!
+
+
 
 
 
