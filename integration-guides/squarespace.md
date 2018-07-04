@@ -6,7 +6,7 @@ description: How to Integrate Weglot on your Squarespace website
 
 ## Using Weglot JS
 
-Follow the [Getting started guide](javascript.md#getting-started). You can also use [link hooks](javascript.md#link-hooks) to create Squarespace native menu entries to Switch language.
+Follow the [Getting started guide](javascript.md#getting-started). You can also use [link hooks](javascript.md#link-hooks) to create Squarespace native menu entries to switch language.
 
 ## Using Weglot Translation Network \(private feature\)
 
@@ -16,7 +16,8 @@ Features include:
 
 * One clean URL for each translated page
 * First-class SEO, following all Google SEO guidelines
-* Social media sharing of your translated page is possible
+* Social media sharing of your translated pages
+* No content-flash : the initial render of the website is correct!
 * All other Weglot features: initial machine translation, a simple dashboard where you can edit all your translations, etc.
 * ... No extra cost included! Your plan will still follow pricing defined at [https://weglot.com/pricing](https://weglot.com/pricing)
 

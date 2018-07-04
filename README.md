@@ -10,6 +10,7 @@ When you use Weglot, you want one of theses for high-level interaction with the 
 * [Javascript](integration-guides/javascript.md#getting-started)
 * [Laravel](integration-guides/laravel.md#installation)
 * [Shopify](integration-guides/shopify.md)
+* [Squarespace](integration-guides/squarespace.md)
 * [Symfony](integration-guides/symfony.md#installation)
 * [Wix](integration-guides/wix.md#getting-started)
 * [Wordpress](integration-guides/wordpress.md#getting-started)
