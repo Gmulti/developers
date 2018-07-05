@@ -317,7 +317,7 @@ function() {
         var option = document.createElement("option");
         option.value = lang;
         option.text = Weglot.getLanguageName(lang);
-        if (l === currentLang) {
+        if (lang === currentLang) {
             option.selected = "selected";        
         }
         selectList.appendChild(option);
