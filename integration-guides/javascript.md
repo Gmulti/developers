@@ -295,5 +295,41 @@ In this setup, **it's your responsibility** to set the right CNAME records so th
 
 Any switcher or link hook set will keep working under this setup. They will redirect to the right hostname upon change.
 
+## Example: create your own switcher
 
+```javascript
+function() {
+    // CHANGE THIS SELECTOR to the element you want to add your custom switcher to.
+    var myDiv = document.getElementById("myDiv");
+
+    //Create array of options to be added
+    var availableLanguages = [Weglot.options.originalLanguage].concat(Weglot.options.destinationLanguages.split(','))
+    
+    //Create and append select list
+    var selectList = document.createElement("select");
+    myDiv.appendChild(selectList);
+    
+    var currentLang = Weglot.getCurrentLang();
+    
+    //Create and append the options
+    for (var i = 0; i < availableLanguages.length; i++) {
+        var lang = availableLanguages[i];
+        var option = document.createElement("option");
+        option.value = lang;
+        option.text = Weglot.getLanguageName(lang);
+        if (l === currentLang) {
+            option.selected = "selected";        
+        }
+        selectList.appendChild(option);
+    }
+    
+    selectList.onchange = function(){
+        Weglot.switchTo(this.value);
+    };
+    
+    Weglot.on("languageChanged", function(lang) {
+        selectList.value = lang;
+    })
+}()
+```
 
