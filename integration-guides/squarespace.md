@@ -41,13 +41,32 @@ Once you have confirmed that the records were properly created, we will add your
 
 * fr.mywebsite.com
 * es.mywebsite.com
-* ar.mywebsite.com
 
 are now ready!
 
+### Step 4 \(optional\): Include the Weglot switcher on your Squarespace website
 
+In the "Inject code" of the advanced settings, include the following code:
 
+```markup
+<script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.setup({
+      api_key: 'your_api_key',
+      originalLanguage: 'en',
+      destinationLanguages : 'fr,es',
+      subDomain: true
+     });
+</script>
+```
 
+This will add a language switcher on the bottom right side of your website. See the [Javascript](javascript.md#initialization-code) documentation for more options.
 
+You can also add 3 menu entries in the Squarespace menu\(s\) of your choice:
 
+* "English" - menu entry of type "Link", that links to `#Weglot-en`
+* "Français" - menu entry of type "Link", that links to `#Weglot-fr`
+* "Español" - menu entry of type "Link", that links to `#Weglot-es`
+
+Weglot will create dynamic links automatically for you. [Read more here](javascript.md#link-hooks).
 
