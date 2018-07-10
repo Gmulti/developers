@@ -7,6 +7,7 @@ Here you can find all resources about our integrations or libraries.
 When you use Weglot, you want one of theses for high-level interaction with the API.
 
 * [Drupal 7](integration-guides/drupal.md#getting-started)
+* [Help Scout](https://developers.weglot.com/integration-guides/help-scout#getting-started)
 * [Javascript](integration-guides/javascript.md#getting-started)
 * [Laravel](integration-guides/laravel.md#installation)
 * [Shopify](integration-guides/shopify.md)
