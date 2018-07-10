@@ -12,6 +12,7 @@
 * [Symfony](integration-guides/symfony.md)
 * [Wix](integration-guides/wix.md)
 * [WordPress](integration-guides/wordpress.md)
+* [Help Scout](integration-guides/help-scout.md)
 
 ## Developer kits
 
