@@ -53,19 +53,17 @@ In `weglot_hreftags.liquid`, replace the line `{% assign sub_domains = false %}`
 
 {% code-tabs %}
 {% code-tabs-item title="weglot\_hreftags.liquid" %}
-```text
+```markup
 {% comment %} Variables set by Weglot's preferences panel {% endcomment %}
 {% assign original_language = "en" %}
 {% assign destination_languages = "es,fr" | split: ',' %}
 {% assign proxy_prefix = "/a/l/" %}
 {% assign sub_domains = true %}
 
-{% comment %} Can be common code {% endcomment %}
 {% assign protocol_part = canonical_url | split: '://' | first | append: '://' %}
 {% assign full_domain = canonical_url | split: '://' | last | split: '/' | first %}
 {% assign path = canonical_url | remove_first: protocol_part | remove_first: full_domain %}
 
-{% if 1==2 %}{% else %}
 <link rel="alternate" hreflang="{{ original_language }}" href="{{ canonical_url }}">
 {% if sub_domains %}
 {% assign main_domain = full_domain  %}
@@ -77,7 +75,7 @@ In `weglot_hreftags.liquid`, replace the line `{% assign sub_domains = false %}`
     <link rel="alternate" hreflang="{{ language }}" href="{{ protocol_part }}{{ full_domain }}{{ proxy_prefix }}{{ language }}{{ path }}">
   {% endfor %}
 {% endif %}
-{% endif %}
+
 <link rel="stylesheet" href="https://cdn.weglot.com/weglot_shopify.min.css" type="text/css" media="all">
 ```
 {% endcode-tabs-item %}
