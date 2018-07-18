@@ -421,13 +421,6 @@ To see the source code of all available functions, you can go to the file : **we
 **Use :** [**weglot\_get\_current\_language**](wordpress.md#weglot_get_current_language)\*\*\*\*
 {% endhint %}
 
-Retrieve the current language \(2 letters code\) of the page
-
-```php
-use Weglot\WeglotContext;
-$current = WeglotContext::getCurrentLanguage() ;
-```
-
 #### getOriginalLanguage
 
 {% hint style="danger" %}
@@ -436,13 +429,6 @@ $current = WeglotContext::getCurrentLanguage() ;
 **Use :** [**weglot\_get\_original\_language**](wordpress.md#weglot_get_original_language)\*\*\*\*
 {% endhint %}
 
-Retrieve the original language of the website, as saved in the weglot settings
-
-```php
-use Weglot\WeglotContext;
-$original = WeglotContext::getOriginalLanguage();
-```
-
 #### getDestinationLanguage
 
 {% hint style="danger" %}
@@ -450,13 +436,6 @@ $original = WeglotContext::getOriginalLanguage();
 
 **Use :** [**weglot\_get\_destination\_language**](wordpress.md#weglot_get_destination_language)\*\*\*\*
 {% endhint %}
-
-Retrieve an array of destination languages, as saved in the weglot settings
-
-```php
-use Weglot\WeglotContext;
-$destinations = WeglotContext::getDestinationLanguage();
-```
 
 ### weglot\_get\_service
 
