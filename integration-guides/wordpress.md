@@ -99,7 +99,7 @@ For example, if you enter this : `.product-description` , then your translated p
 
 Weglot plugin is using WordPress filters to extend default capabilities
 
-#### weglot\_words\_translate
+### weglot\_words\_translate
 
 {% hint style="info" %}
 Since : 1.12
@@ -124,7 +124,7 @@ function words_translate($words){
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-#### weglot\_regex\_amp
+### weglot\_regex\_amp
 
 {% hint style="info" %}
 Since : 2.0
@@ -149,7 +149,7 @@ function regex_amp($regex){
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-#### weglot\_is\_eligible\_url
+### weglot\_is\_eligible\_url
 
 {% hint style="info" %}
 Since : 2.0
@@ -175,7 +175,7 @@ function eligible_url( $bool ){
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-#### weglot\_url\_auto\_redirect
+### weglot\_url\_auto\_redirect
 
 {% hint style="info" %}
 Since : 2.0
@@ -198,7 +198,7 @@ function eligible_url( $url ){
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-#### weglot\_active\_translation
+### weglot\_active\_translation
 
 {% hint style="info" %}
 Since : 2.0
@@ -221,7 +221,7 @@ function active_translation( $is_active ){
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-#### weglot\_type\_treat\_page
+### weglot\_type\_treat\_page
 
 {% hint style="info" %}
 Since : 2.0
@@ -266,7 +266,7 @@ function type_treat_page( $content ){
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-#### weglot\_href\_lang
+### weglot\_href\_lang
 
 {% hint style="info" %}
 Since : 2.0
@@ -291,7 +291,7 @@ function htm_href_lang( $content ){
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-#### weglot\_button\_html
+### weglot\_button\_html
 
 {% hint style="info" %}
 Since 2.0
@@ -315,7 +315,7 @@ function button_html( $button_html ){
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-#### weglot\_get\_dom\_checkers
+### weglot\_get\_dom\_checkers
 
 {% hint style="info" %}
 Since 2.0
@@ -338,7 +338,7 @@ function get_dom_checkers( $dom_checkers ){
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-#### weglot\_exclude\_blocks
+### weglot\_exclude\_blocks
 
 {% hint style="info" %}
 Since 2.0
@@ -361,7 +361,7 @@ function exclude_blocks( $exclude_blocks ){
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-#### weglot\_exclude\_urls
+### weglot\_exclude\_urls
 
 {% hint style="info" %}
 Since 2.0
@@ -384,7 +384,7 @@ function exclude_blocks( $exclude_urls ){
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-#### weglot\_css\_custom\_inline
+### weglot\_css\_custom\_inline
 
 {% hint style="info" %}
 Since 2.0
@@ -452,7 +452,7 @@ use Weglot\WeglotContext;
 $destinations = WeglotContext::getDestinationLanguage();
 ```
 
-#### weglot\_get\_service
+### weglot\_get\_service
 
 {% hint style="info" %}
 Since 2.0
@@ -472,7 +472,7 @@ This function allows you to retrieve a "Service" class from the plugin
 $language_service = weglot_get_service( 'Language_Service_Weglot' );
 ```
 
-#### weglot\_get\_options
+### weglot\_get\_options
 
 {% hint style="info" %}
 Since 2.0
@@ -489,7 +489,7 @@ $options = weglot_get_options();
 echo $options['original_language'];
 ```
 
-#### weglot\_get\_option
+### weglot\_get\_option
 
 {% hint style="info" %}
 Since 2.0
@@ -510,7 +510,7 @@ $original_language = weglot_get_options( 'original_language' );
 echo $original_language;
 ```
 
-#### weglot\_get\_current\_language
+### weglot\_get\_current\_language
 
 {% hint style="info" %}
 Since 2.0
@@ -527,7 +527,7 @@ $current_language = weglot_get_current_language();
 echo $current_language;
 ```
 
-#### weglot\_get\_destination\_language
+### weglot\_get\_destination\_language
 
 {% hint style="info" %}
 Since 2.0
@@ -544,5 +544,80 @@ $destination_language = weglot_get_destination_language();
 echo $destination_language[0];
 ```
 
+### weglot\_get\_request\_url\_service
 
+{% hint style="info" %}
+Since 2.0
+
+**Return :** Request\_Url\_Service\_Weglot
+{% endhint %}
+
+Retrieve Request URL Service Weglot
+
+```php
+<?php
+
+$request_url_service = weglot_get_request_url_service();
+```
+
+### weglot\_get\_current\_and\_original\_language
+
+{% hint style="info" %}
+Since 2.0
+
+**Return :** array
+{% endhint %}
+
+Recovers the original language and the common language
+
+```php
+<?php
+
+$current_and_original = weglot_get_current_and_original_language();
+echo $current_and_original['original'];
+```
+
+### weglot\_get\_languages\_available
+
+{% hint style="info" %}
+Since 2.0
+
+**Return :**  array
+{% endhint %}
+
+Recovers languages available from Weglot
+
+```php
+<?php
+
+$languages_available = weglot_get_languages_available();
+echo $languages_available['fr']->getLocalName();
+```
+
+#### weglot\_get\_languages\_configured
+
+{% hint style="info" %}
+Since 2.0
+
+**Params :**
+
+* $type \(string\|null\) Default : null
+
+**Return :** array
+{% endhint %}
+
+Get languages configured from options.
+
+If type is null, you will retrieve an object. You can use "**code"** and retrieve only code language.
+
+```php
+<?php
+
+$languages_configured = weglot_get_languages_configured();
+echo $languages_configured[0]->getLocalName(); // Example : 'Français'
+
+// Or
+$languages_configured = weglot_get_languages_configured('code');
+echo $languages_configured[0]; // Example : 'fr'
+```
 
