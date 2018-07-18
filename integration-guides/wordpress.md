@@ -361,6 +361,52 @@ function exclude_blocks( $exclude_blocks ){
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
+#### weglot\_exclude\_urls
+
+{% hint style="info" %}
+Since 2.0
+{% endhint %}
+
+This filter allows you to add urls to exclude that cannot be modified from the settings.
+
+{% code-tabs %}
+{% code-tabs-item title="functions.php" %}
+```php
+<?php
+// File wp-content/themes/myTheme/functions.php​
+
+add_filter('weglot_exclude_urls', 'exclude_urls');​
+function exclude_blocks( $exclude_urls ){     
+    $exclude_urls[] = '/my-new-url';
+    return $exclude_urls;
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
+#### weglot\_css\_custom\_inline
+
+{% hint style="info" %}
+Since 2.0
+{% endhint %}
+
+This filter allows you to add custom style by default without going through the settings.
+
+{% code-tabs %}
+{% code-tabs-item title="functions.php" %}
+```php
+<?php
+// File wp-content/themes/myTheme/functions.php​
+
+add_filter('weglot_css_custom_inline', 'css_custom_inline');​
+function css_custom_inline( $css_custom ){     
+    $css_custom .= '.country-selector { background-color: red; }'; 
+    return $css_custom;
+}
+```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
+
 ## Helper functions
 
 Weglot plugin is exposing functions that can be called in your code
