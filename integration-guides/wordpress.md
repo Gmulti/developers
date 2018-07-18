@@ -409,7 +409,9 @@ function css_custom_inline( $css_custom ){
 
 ## Helper functions
 
-Weglot plugin is exposing functions that can be called in your code
+Weglot plugin is exposing functions that can be called in your code.
+
+To see the source code of all available functions, you can go to the file : **weglot-functions.php** \(Only with 2.0\)
 
 #### getCurrentLanguage
 
@@ -448,6 +450,98 @@ Retrieve an array of destination languages, as saved in the weglot settings
 ```php
 use Weglot\WeglotContext;
 $destinations = WeglotContext::getDestinationLanguage();
+```
+
+#### weglot\_get\_service
+
+{% hint style="info" %}
+Since 2.0
+
+**Params :** 
+
+* $service \(string\) 
+
+**Return :** Object
+{% endhint %}
+
+This function allows you to retrieve a "Service" class from the plugin
+
+```php
+<?php
+
+$language_service = weglot_get_service( 'Language_Service_Weglot' );
+```
+
+#### weglot\_get\_options
+
+{% hint style="info" %}
+Since 2.0
+
+**Return :**  string
+{% endhint %}
+
+This function allows you to retrieve all options Weglot
+
+```php
+<?php
+
+$options = weglot_get_options();
+echo $options['original_language'];
+```
+
+#### weglot\_get\_option
+
+{% hint style="info" %}
+Since 2.0
+
+**Params :** 
+
+* $key \(string\)
+
+**Return :** string
+{% endhint %}
+
+This function allows you to retrieve a specific option Weglot
+
+```php
+<?php
+
+$original_language = weglot_get_options( 'original_language' );
+echo $original_language;
+```
+
+#### weglot\_get\_current\_language
+
+{% hint style="info" %}
+Since 2.0
+
+**Return :** string
+{% endhint %}
+
+Retrieves the current language of a page
+
+```php
+<?php
+
+$current_language = weglot_get_current_language();
+echo $current_language;
+```
+
+#### weglot\_get\_destination\_language
+
+{% hint style="info" %}
+Since 2.0
+
+**Return** : array
+{% endhint %}
+
+Retrieves destination languages option
+
+```php
+<?php
+
+$destination_language = weglot_get_destination_language();
+echo $destination_language[0];
 ```
 
 
