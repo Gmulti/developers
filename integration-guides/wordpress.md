@@ -621,3 +621,92 @@ $languages_configured = weglot_get_languages_configured('code');
 echo $languages_configured[0]; // Example : 'fr'
 ```
 
+### weglot\_get\_button\_selector\_html
+
+{% hint style="info" %}
+Since 2.0
+
+**Params :** 
+
+* $add\_class \(string\)
+
+**Return :** string
+{% endhint %}
+
+Generates the HTML of the Weglot selector.
+
+```php
+<?php
+
+$button_html = weglot_get_button_selector_html();
+echo $button_html;
+```
+
+### weglot\_get\_exclude\_urls
+
+{% hint style="info" %}
+Since 2.0
+
+**Return  :** array
+{% endhint %}
+
+Retrieves all URLs exclude
+
+```php
+<?php
+
+$exclude_urls = weglot_get_exclude_urls();
+echo $exclude_urls[0];
+```
+
+### weglot\_get\_translate\_amp\_translation
+
+{% hint style="info" %}
+Since 2.0
+
+**Return :**  boolean
+{% endhint %}
+
+Enables you to see if translation of AMP pages is enabled
+
+```php
+<?php
+
+$amp_is_active = weglot_get_translate_amp_translation();
+if($amp_is_active){ // ... } 
+```
+
+### weglot\_get\_current\_full\_url
+
+{% hint style="info" %}
+Since 2.0
+
+**Return**  : string
+{% endhint %}
+
+Retrieves the current complete URL
+
+```php
+<?php
+
+$full_url = weglot_get_current_full_url();
+echo $full_url;
+```
+
+### weglot\_is\_eligible\_url
+
+{% hint style="info" %}
+Since 2.0
+
+**Return :** boolean
+{% endhint %}
+
+Enables you to see if translation URL is possible
+
+```php
+<?php
+
+$is_eligible = weglot_is_eligible_url();
+if($is_eligible){ // ... } 
+```
+
