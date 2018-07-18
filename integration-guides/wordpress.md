@@ -710,12 +710,31 @@ $is_eligible = weglot_is_eligible_url();
 if($is_eligible){ // ... } 
 ```
 
+### weglot\_has\_auto\_redirect
+
+{% hint style="info" %}
+Since 2.0
+
+**Return :** boolean
+{% endhint %}
+
+This function allows to know if the auto-redirection is active or not
+
+```php
+<?php
+
+$has_auto_redirect = weglot_has_auto_redirect();
+if($has_auto_redirect){ // ... } 
+```
+
 ## How to add the selector after the menu?
 
 If you want to have our HTML selector directly after your menu, you can use this code by adding it in your theme functions.php file
 
+{% code-tabs %}
+{% code-tabs-item title="functions.php" %}
 ```php
-
+// File wp-content/themes/myTheme/functions.php​
 add_filter( 'wp_nav_menu_items',  'weglot_after_menu' );
 
  function weglot_after_menu( $items ) {
@@ -726,4 +745,6 @@ add_filter( 'wp_nav_menu_items',  'weglot_after_menu' );
 }
 	
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
