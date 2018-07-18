@@ -14,7 +14,7 @@ When you use Weglot, you want one of theses for high-level interaction with the 
 * [Squarespace](integration-guides/squarespace.md)
 * [Symfony](integration-guides/symfony.md#installation)
 * [Wix](integration-guides/wix.md#getting-started)
-* [Wordpress](integration-guides/wordpress.md#getting-started)
+* [WordPress](integration-guides/wordpress.md#getting-started)
 
 ## Developer Kits
 
