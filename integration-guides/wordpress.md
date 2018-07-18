@@ -710,3 +710,20 @@ $is_eligible = weglot_is_eligible_url();
 if($is_eligible){ // ... } 
 ```
 
+## How to add the selector after the menu?
+
+If you want to have our HTML selector directly after your menu, you can use this code by adding it in your theme functions.php file
+
+```php
+
+add_filter( 'wp_nav_menu_items',  'weglot_after_menu' );
+
+ function weglot_after_menu( $items ) {
+	$button = weglot_get_button_selector_html( '' );
+	$items .= $button;
+
+	return $items;
+}
+	
+```
+
