@@ -173,7 +173,7 @@ Weglot.on("languageChanged", function(newLang, prevLang) {
 
 #### initialized
 
-This is called right after the call to **Weglot.setup\(options\)** has been successful. The language switchers are now displayed and the nodes to translate are prepared. 
+This is called right after the call to **Weglot.setup\(options\)** has been successful, but before the switchers are created and the page is translated
 
 ```javascript
 Weglot.on("initialized", callbackFunction)
@@ -189,10 +189,10 @@ To check whether Weglot is already initialized or not, you can read the boolean 
 
 #### switchersReady
 
-This is called right after the call to **Weglot.setup\(options\)** has been successful. The language switchers are now displayed and the nodes to translate are prepared. 
+This is called right after the switchers have been created.
 
 ```javascript
-Weglot.on("initialized", callbackFunction)
+Weglot.on("switchersReady", callbackFunction)
 ```
 
 The callback function will be called with one optional argument: `initialLanguage`
