@@ -117,6 +117,20 @@ For example, calling `Weglot.getLanguageName("es")` returns `"Español"`
 {% endtab %}
 {% endtabs %}
 
+### Weglot.getBestAvailableLanguage\(\) {#weglot-getlanguagename-code}
+
+{% tabs %}
+{% tab title="Parameters" %}
+None
+{% endtab %}
+
+{% tab title="Response" %}
+* code\(String\): the ISO 639-1 2-letter code of the best available language
+{% endtab %}
+{% endtabs %}
+
+This function checks the visitors preferred languages, and finds the best match among the languages you support on Weglot. It's the function used internally when you use the `autoSwitch` function
+
 ### Weglot.switchTo\(code\)
 
 {% tabs %}
@@ -172,6 +186,24 @@ If you register your callback **after** Weglot has been initialized, this will h
 
 To check whether Weglot is already initialized or not, you can read the boolean `Weglot.initialized`
 {% endhint %}
+
+#### switchersReady
+
+This is called right after the call to **Weglot.setup\(options\)** has been successful. The language switchers are now displayed and the nodes to translate are prepared. 
+
+```javascript
+Weglot.on("initialized", callbackFunction)
+```
+
+The callback function will be called with one optional argument: `initialLanguage`
+
+Example:
+
+```javascript
+Weglot.on("switchersReady", function(initialLanguage) {
+  console.log("the switchers are ready, I can tweak them")
+})
+```
 
 ### Weglot.off\(eventName, callbackFunction\)
 
