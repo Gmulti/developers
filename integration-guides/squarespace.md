@@ -17,6 +17,8 @@ Features include:
 * One clean URL for each translated page
 * First-class SEO, following all Google SEO guidelines
 * Social media sharing of your translated pages
+* Ability to run ads on language-specific versions of your website
+* Analytics \(e.g. Google Analytics\) can be segmented per domain out of the box 
 * No content-flash : the initial render of the website is correct!
 * All other Weglot features: initial machine translation, a simple dashboard where you can edit all your translations, etc.
 * ... No extra cost included! Your plan will still follow pricing defined at [https://weglot.com/pricing](https://weglot.com/pricing)
