@@ -34,7 +34,7 @@ Write an email to support@weglot.com, mentioning that you want to use Weglot Tra
 
 We will get back to you with clear instructions on some DNS records to create.
 
-* One CNAME record to verify your ownership of the domain and issue an SSL certificate on your behalf
+* One CNAME record to verify your ownership of the domain and issue an SSL certificate, in order to serve your translated domain with the HTTPS protocol
 * One CNAME record for each language that you wish to add
 
 ### Step 3: Enjoy!
