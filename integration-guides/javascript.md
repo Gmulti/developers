@@ -37,7 +37,7 @@ Weglot.setup(options)
 Where `options` is a Javascript object with properties defined as follows. Only **`api_key`**, **`originalLanguage`** and **`destinationLanguages`** \(in bold\) are required.
 
 | Property | Description | Default | Example |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **`api_key`** | Your Weglot API Key |  |  |
 | **`originalLanguage`** | The ISO 639-1 code of the original language of your website |  | `"en"` |
 | **`destinationLanguages`** | A comma-separated list of 2-letter codes of languages you wish to be able to translate your website to. |  | `"fr,es"` |
@@ -48,12 +48,13 @@ Where `options` is a Javascript object with properties defined as follows. Only 
 | `styleOpt["classF"]` | A String. The extra CSS class to apply to the button elements. Add `wg-flags` to show flags \(by default they will be mat rectangles\). | `""` | `"wg-flags flag-3"` `"wg-flags"` |
 | `autoSwitch` | `true` to automatically switch to the user's preferred language if available. `false` otherwise. | `false` |  |
 | `exceptions` | A comma-separated list of CSS selectors of elements to exempt from translation | `""` | `"#not-this-id,.not-this-class"` |
-| `dynamic` | A comma-separated list of CSS selectors of elements to watch for changes. If content changes dynamically inside one of the targeted elements, Weglot will translate it. | `""` | `".content-will-change-inside"` |
+| `dynamic` | A comma-separated list of CSS selectors of elements to watch for changes. If content changes dynamically inside one of the targeted elements, Weglot will translate it. | `""` | `".content-will-change-here"` |
 | `excludePaths` | A comma-separated list of paths to exclude from translations. The current path will be tested against Regex strings. | `""` | `"/blog/,/checkout/\d+"` |
 | `waitTransition` | `true` to prevent content blinking when translating a new page. | `true` |  |
 | `subDomain` | `true` to enable the [subdomain mode](javascript.md#subdomain-mode) | `false` |  |
 | `hideSwitcher` | `true` to prevent Weglot from creating language switchers, false otherwise. Defaults to false. If you set it to true, it's your responsibility to use the [Client-side API](javascript.md#weglot-switchto-code) or [link hooks](javascript.md#link-hooks) to change languages on the page | `false` |  |
 | `translateSearch` | `true` to translate search queries on the website, `false` otherwise.  | `false` |  |
+| `translateImages` | `true` to translate Images on the website, false `otherwise` | `true` |  |
 | `searchsForms` | A comma-separated list of CSS selectors of search form elements to watch for. Useful only if `translateSearch` is `true`. The form has to send a `q` parameter for it to work | `""` |  |
 | `switchers` | A Javascript Array of Objects representing several language switchers on the page | `[]` |  |
 | `switchers[]["styleOpt"]` | A Javascript Object defined exactly like `styleOpt` |  |  |
