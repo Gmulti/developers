@@ -37,7 +37,7 @@ Weglot.setup(options)
 Where `options` is a Javascript object with properties defined as follows. Only **`api_key`**, **`originalLanguage`** and **`destinationLanguages`** \(in bold\) are required.
 
 | Property | Description | Default | Example |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **`api_key`** | Your Weglot API Key |  |  |
 | **`originalLanguage`** | The ISO 639-1 code of the original language of your website |  | `"en"` |
 | **`destinationLanguages`** | A comma-separated list of 2-letter codes of languages you wish to be able to translate your website to. |  | `"fr,es"` |
@@ -56,6 +56,7 @@ Where `options` is a Javascript object with properties defined as follows. Only 
 | `translateSearch` | `true` to translate search queries on the website, `false` otherwise.  | `false` |  |
 | `translateImages` | `true` to translate images' URLs on the website, `false` otherwise | `true` |  |
 | `searchsForms` | A comma-separated list of CSS selectors of search form elements to watch for. Useful only if `translateSearch` is `true`. The form has to send a `q` parameter for it to work | `""` |  |
+| `cache` | Setting this to `true` greatly improves user experience by caching Weglot's translations into your visitors' browser. Translations are kept up-to-date asynchronously. | `false` |  |
 | `switchers` | A Javascript Array of Objects representing several language switchers on the page | `[]` |  |
 | `switchers[]["styleOpt"]` | A Javascript Object defined exactly like `styleOpt` |  |  |
 | `switchers[]["target"]` | The CSS selector of the node that the switcher will be a child of |  | `".site-header__section--title"` |
