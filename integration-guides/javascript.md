@@ -37,7 +37,7 @@ Weglot.setup(options)
 Where `options` is a Javascript object with properties defined as follows. Only **`api_key`**, **`originalLanguage`** and **`destinationLanguages`** \(in bold\) are required.
 
 | Property | Description | Default | Example |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- | :--- |
 | **`api_key`** | Your Weglot API Key |  |  |
 | **`originalLanguage`** | The ISO 639-1 code of the original language of your website |  | `"en"` |
 | **`destinationLanguages`** | A comma-separated list of 2-letter codes of languages you wish to be able to translate your website to. |  | `"fr,es"` |
@@ -293,7 +293,7 @@ I want to use the native menu feature of my CMS. Let's say my original language 
 My menu would have 3 entries, as follows:
 
 | **Text** | **Link** |
-| --- | --- | --- | --- |
+| :--- | :--- |
 | English | \#Weglot-en |
 | Français | \#Weglot-fr |
 | Español | \#Weglot-es |
@@ -305,7 +305,7 @@ I have now a "native" language switcher that works for all these languages. If I
 Sometimes, the CMS you will be using won't allow for anchor links in the menu \(e.g. Wix\). In this case, you can use fake links that will be replaced when Weglot initializes:
 
 | **Text** | **Link** |
-| --- | --- | --- |
+| :--- | :--- |
 | English | http://change-language.weglot.com/en |
 | Français | http://change-language.weglot.com/fr |
 
@@ -318,7 +318,7 @@ Passing `subDomain: true`on the initialization call allows Weglot to match the c
 If your original language is English, and your destination languages are French and Spanish, this assumes the following setup:
 
 | Hostname delivering the website | Language set by Weglot |
-| --- | --- | --- | --- | --- | --- |
+| :--- | :--- |
 | www.mywebsite.com | English |
 | mywebsite.com | English |
 | fr.mywebsite.com | French |

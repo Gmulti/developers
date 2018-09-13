@@ -187,7 +187,7 @@ This is only a health check endpoint, don't spam it.
 Used to define the source of a request.
 
 | **Short-Name** | **Value** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | HUMAN | 0 | Sent from human action |
 | OTHER | 1 | Sent from unknown source |
 | GOOGLE | 2 | Sent from Google Bot |
@@ -201,7 +201,7 @@ Used to define the source of a request.
 Used to provide context over where the text we wish to translate comes from. Any general text node is of WordType **1**.
 
 | **Short name** | **Value** | **Description** |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| :--- | :--- | :--- |
 | OTHER | 0 | None of the elements below \(deprecated\) |
 | TEXT | 1 | General text \(used most of the time\) |
 | VALUE | 2 | The value of an input tag's`value`attribute |
